@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraAcitvity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/Image_View"
+        android:gravity="center"
+        android:background="#ccc" />
+
+    <ImageView
+        android:id="@+id/Button_Kamera"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/camera"
+        android:text="Kamera Indítása" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Myself_oldal"
+                android:layout_width="81dp"
+                android:layout_height="91dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:src="@mipmap/me" />
+
+            <ImageView
+                android:id="@+id/Family_oldal"
+                android:layout_width="81dp"
+                android:layout_height="91dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:src="@mipmap/family" />
+
+            <ImageView
+                android:id="@+id/Harmadik_oldal"
+                android:layout_width="81dp"
+                android:layout_height="91dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:src="@mipmap/comode" />
+
+            <ImageView
+                android:id="@+id/negyedik_oldal"
+                android:layout_width="81dp"
+                android:layout_height="91dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:src="@mipmap/cold" />
+
+            <ImageView
+                android:id="@+id/otodik_oldal"
+                android:layout_width="81dp"
+                android:layout_height="91dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:src="@mipmap/drinking" />
+
+
+            <ImageView
+                android:id="@+id/button_kamera"
+                android:layout_width="81dp"
+                android:layout_height="91dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:src="@mipmap/camera" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

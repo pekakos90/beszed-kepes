@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BeszedKepes</string>
+    <string name="btn_login">Bejelentkezés</string>
+    <string name="btn_link_signup">Nincs felhasználód? Regisztrálj!</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_username">Felhasználónév</string>
+    <string name="hint_password">Jelszó</string>
+    <string name="hint_password2">Jelszó ismétlés</string>
+    <string name="hint_dob">Születési dátum (NN/HH/ÉÉÉÉ)</string>
+    <string name="hint_gender">Nem:</string>
+    <string name="male">Fiú</string>
+    <string name="female">Lány</string>
+    <string name="btn_sign_up">Regisztráció</string>
+</resources>
