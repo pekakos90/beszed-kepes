@@ -37,10 +37,7 @@ public class Main2Activity extends AppCompatActivity {
         Family_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Image_View1.buildDrawingCache();
-                Bitmap bitmap = Image_View1.getDrawingCache();
                 Intent family_activity = new Intent(Main2Activity.this, FamilyActivity.class);
-                family_activity.putExtra("BitmapImage", bitmap);
                 startActivity(family_activity);
                 finish();
             }

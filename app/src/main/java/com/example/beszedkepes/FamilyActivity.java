@@ -12,7 +12,6 @@ import android.widget.ImageView;
 public class FamilyActivity extends AppCompatActivity {
 
     private ImageView Myself_oldal, button_kamera, Image_View1;
-    String kep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +25,6 @@ public class FamilyActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myself_activity= new Intent(FamilyActivity.this,Main2Activity.class);
-                Bitmap bitmap = (Bitmap) myself_activity.getParcelableExtra("BitmapImage");
                 startActivity(myself_activity);
                 finish();
             }
@@ -44,7 +42,7 @@ public class FamilyActivity extends AppCompatActivity {
 
     private void init() {
         Myself_oldal = (ImageView) findViewById(R.id.Myself_oldal);
-        button_kamera = (ImageView) findViewById(R.id.button_kamera);
-        Image_View1 = (ImageView) findViewById(R.id.Image_View1);
+        button_kamera = findViewById(R.id.button_kamera);
+        Image_View1 = findViewById(R.id.Image_View1);
     }
 }

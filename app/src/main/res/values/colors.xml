@@ -8,5 +8,6 @@
     <color name="grey">#949292</color>
     <color name="AppTheme_Dark_Dialog">#361E1E</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#0F0C0C</color>
 
 </resources>
