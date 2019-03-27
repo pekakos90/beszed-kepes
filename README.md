@@ -1,0 +1,2 @@
+# beszed-kepes
+Szakdolgozat program
