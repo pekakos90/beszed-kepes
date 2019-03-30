@@ -20,12 +20,14 @@
 
 
         <ImageView
+            android:id="@+id/Image_View11"
             android:layout_width="15dp"
             android:layout_height="100dp"
             android:layout_weight="0.25"
             android:padding="10dp" />
 
         <ImageView
+            android:id="@+id/Image_View22"
             android:layout_width="15dp"
             android:layout_height="100dp"
             android:layout_weight="0.25"
@@ -68,7 +70,8 @@
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
                     android:padding="10dp"
-                    android:src="@mipmap/grandpa" />
+                    android:src="@mipmap/grandpa"
+                    android:id="@+id/ImageViewGrandPa"/>
 
                 <ImageView
                     android:layout_width="15dp"

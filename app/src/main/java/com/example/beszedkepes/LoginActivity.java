@@ -1,7 +1,9 @@
 package com.example.beszedkepes;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.os.Handler;
@@ -31,6 +33,8 @@ public class LoginActivity extends AppCompatActivity {
     String belsojelszo = "";
     boolean belepes = false;
 
+    private SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +53,8 @@ public class LoginActivity extends AppCompatActivity {
                     Intent belepes = new Intent(LoginActivity.this, Main2Activity.class);
                     startActivity(belepes);
                     finish();
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
                 }
             }
         });
@@ -120,6 +126,8 @@ public class LoginActivity extends AppCompatActivity {
         login_input_layout_password = (TextInputLayout) findViewById(R.id.login_input_layout_password);
         login_input_layout_username = (TextInputLayout) findViewById(R.id.login_input_layout_username);
         db = new DatabaseHelper(LoginActivity.this);
+
+        sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
     }
 
     /*Runnable runnable = new Runnable() {
