@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".FamilyActivity"></activity>
+        <activity android:name=".IntentionActivity"></activity>
+        <activity android:name=".FamilyActivity" />
         <activity android:name=".CameraAcitvity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".Main2Activity" />

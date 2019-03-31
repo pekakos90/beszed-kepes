@@ -17,7 +17,7 @@ import java.io.ByteArrayOutputStream;
 
 public class FamilyActivity extends AppCompatActivity {
 
-    private ImageView Myself_oldal, button_kamera, Image_View1, Image_View22, ImageViewGrandPa;
+    private ImageView Myself_oldal, button_kamera, Image_View1, Image_View22, ImageViewGrandPa, Harmadik_oldal;
 
     private SharedPreferences sharedPreferences;
 
@@ -51,6 +51,15 @@ public class FamilyActivity extends AppCompatActivity {
             }
         });
 
+        Harmadik_oldal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent szandek_activity= new Intent(FamilyActivity.this,IntentionActivity.class);
+                startActivity(szandek_activity);
+                finish();
+            }
+        });
+
         ImageViewGrandPa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,6 +80,7 @@ public class FamilyActivity extends AppCompatActivity {
         Image_View1 = findViewById(R.id.Image_View11);
         ImageViewGrandPa = findViewById(R.id.ImageViewGrandPa);
         Image_View22 = findViewById(R.id.Image_View22);
+        Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
 
         sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
     }

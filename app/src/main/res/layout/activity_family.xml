@@ -168,7 +168,7 @@
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
                 android:padding="10dp"
-                android:src="@mipmap/comode" />
+                android:src="@mipmap/dancing" />
 
             <ImageView
                 android:id="@+id/negyedik_oldal"

@@ -81,7 +81,8 @@ public class Main2Activity extends AppCompatActivity {
         Image_11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Image_View1.setImageResource(R.mipmap.sad);
+                if (!Image_View1.equals(Image_10))
+                    Image_View1.setImageResource(R.mipmap.sad);
                 Image_11.setImageResource(R.mipmap.backpain);
                 Image_11.setEnabled(false);
 

@@ -5,47 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Main2Activity"
     android:background="@drawable/gradient"
-    >
+    tools:context=".IntentionActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="0.49"
+        android:layout_weight="0.5"
         android:scrollbars="none"
         android:orientation="horizontal"
         android:gravity="center"
-        android:background="@drawable/edge">
+        android:background="@drawable/edge"
+        android:fadingEdge="vertical">
 
 
-                        <ImageView
-                            android:id="@+id/Image_View1"
-                            android:layout_width="15dp"
-                            android:layout_height="100dp"
-                            android:layout_weight="0.25"
-                            android:padding="5dp" />
+        <ImageView
+            android:id="@+id/Image_View11"
+            android:layout_width="15dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
+            android:padding="10dp" />
 
-                        <ImageView
-                            android:id="@+id/Image_View2"
-                            android:layout_width="15dp"
-                            android:layout_height="100dp"
-                            android:layout_weight="0.25"
-                            android:padding="5dp" />
+        <ImageView
+            android:id="@+id/Image_View22"
+            android:layout_width="15dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
+            android:padding="10dp" />
 
-                        <ImageView
-                            android:id="@+id/Image_View3"
-                            android:layout_width="15dp"
-                            android:layout_height="100dp"
-                            android:layout_weight="0.25"
-                            android:padding="5dp" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
+            android:padding="10dp" />
 
-                        <ImageView
-                            android:id="@+id/Image_View4"
-                            android:layout_width="15dp"
-                            android:layout_height="100dp"
-                            android:layout_weight="0.25"
-                            android:padding="5dp" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
+            android:padding="10dp" />
 
 
     </LinearLayout>
@@ -54,7 +52,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none"
-
         android:layout_weight="0.2">
 
         <TableLayout
@@ -69,116 +66,177 @@
                 android:layout_height="92dp">
 
                 <ImageView
-                    android:id="@+id/Image_10"
                     android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
                     android:padding="10dp"
-                    android:src="@mipmap/girl" />
+                    android:src="@mipmap/hugging"
+                    android:id="@+id/ImageViewGrandPa"/>
 
                 <ImageView
-                    android:id="@+id/Image_11"
                     android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
                     android:padding="10dp"
-                    android:src="@mipmap/sad" />
+                    android:src="@mipmap/dressingup" />
 
                 <ImageView
-                    android:id="@+id/Image_12"
                     android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
                     android:padding="10dp"
-                    android:src="@mipmap/suprised" />
+                    android:src="@mipmap/breakfast" />
 
                 <ImageView
-                    android:id="@+id/Image_13"
                     android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
                     android:padding="10dp"
-                    android:src="@mipmap/sick" />
+                    android:src="@mipmap/music" />
 
             </TableRow>
 
             <TableRow
-                android:id="@+id/tableRow2"
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.25"
+                android:src="@mipmap/dancing"
+                android:padding="10dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.25"
+                android:src="@mipmap/dieta"
+                android:padding="10dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.25"
+                android:padding="10dp"
+                android:src="@mipmap/amagatall"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.25"
+                android:padding="10dp"
+                android:src="@mipmap/cleaning"/>
+
+        </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/Image_20"
                     android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
-                    android:src="@mipmap/uncertain"
+                    android:src="@mipmap/getup"
                     android:padding="10dp" />
 
                 <ImageView
-                    android:id="@+id/Image_21"
                     android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
-                    android:src="@mipmap/drinking"
+                    android:src="@mipmap/szervezetlen"
                     android:padding="10dp" />
 
                 <ImageView
-                    android:id="@+id/Image_22"
                     android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:src="@mipmap/walking"/>
 
                 <ImageView
-                    android:id="@+id/Image_23"
                     android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:src="@mipmap/aludni_2"/>
 
             </TableRow>
+
 
             <TableRow
-                android:id="@+id/tableRow3"
-                android:layout_width="match_parent"
-                android:layout_height="92dp">
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/Image_30"
+                    android:layout_width="15dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.25"
+                    android:src="@mipmap/beszelget"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.25"
+                    android:src="@mipmap/festhajat"
+                    android:padding="10dp" />
+
+                <ImageView
                     android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
                     android:padding="10dp"
-                    android:src="@mipmap/girl" />
+                    android:src="@mipmap/foci"/>
 
                 <ImageView
-                    android:id="@+id/Image_31"
-                    android:layout_width="30dp"
-                    android:layout_height="110dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/sad2web" />
-
-                <ImageView
-                    android:id="@+id/Image_32"
                     android:layout_width="15dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
                     android:padding="10dp"
-                    android:src="@mipmap/suprised" />
-
-                <ImageView
-                    android:id="@+id/Image_33"
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/sick" />
+                    android:src="@mipmap/fotoz"/>
 
             </TableRow>
 
 
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.25"
+                    android:src="@mipmap/hinta"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.25"
+                    android:src="@mipmap/vadaszat"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.25"
+                    android:padding="10dp"
+                    android:src="@mipmap/fesul"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.25"
+                    android:padding="10dp"
+                    android:src="@mipmap/kemping"/>
+
+            </TableRow>
 
         </TableLayout>
 
@@ -248,5 +306,6 @@
         </LinearLayout>
 
     </HorizontalScrollView>
+
 
 </LinearLayout>
