@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class Main2Activity extends AppCompatActivity {
 
-    private ImageView Family_oldal, button_kamera, Image_View1,
+    private ImageView Family_oldal, button_kamera, Image_View1, Image_View22,
             Image_10, Image_View2, Image_View3, Image_View4,
             Image_11, Image_12, Image_13, Image_20, Image_21, Image_22, Image_23, Image_30,
             Image_31, Image_32, Image_33;
@@ -89,6 +89,7 @@ public class Main2Activity extends AppCompatActivity {
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("myself", encodeToBase64(((BitmapDrawable)Image_View1.getDrawable()).getBitmap()));
+                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.commit();
             }
         });
@@ -130,7 +131,8 @@ public class Main2Activity extends AppCompatActivity {
             Image_30 = (ImageView) findViewById(R.id.Image_30);
             Image_31 = (ImageView) findViewById(R.id.Image_31);
             Image_32 = (ImageView) findViewById(R.id.Image_32);
-            Image_33 = (ImageView) findViewById(R.id.Image_33);
+            Image_32 = (ImageView) findViewById(R.id.Image_32);
+            Image_View22 = (ImageView) findViewById(R.id.Image_View22);
 
             sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
         }

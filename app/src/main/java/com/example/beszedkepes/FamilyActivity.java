@@ -17,7 +17,7 @@ import java.io.ByteArrayOutputStream;
 
 public class FamilyActivity extends AppCompatActivity {
 
-    private ImageView Myself_oldal, button_kamera, Image_View1, Image_View2, Image_View22, ImageEn, ImageViewGrandPa, Harmadik_oldal;
+    private ImageView Myself_oldal, button_kamera, Image_View11, Image_View2, Image_View22, ImageEn, ImageViewGrandPa, Harmadik_oldal;
 
     private SharedPreferences sharedPreferences;
 
@@ -31,7 +31,11 @@ public class FamilyActivity extends AppCompatActivity {
 
         String informacio = sharedPreferences.getString("myself","");                                         //Lekérjük a name adatott amibe beletettünk egy stringet a Mentes_Activity-nél és beletesszük egy stringbe
         Bitmap seged_bitmap = decodeToBase64(informacio);
-        Image_View1.setImageBitmap(seged_bitmap);
+        Image_View11.setImageBitmap(seged_bitmap);
+
+        String informacio_family = sharedPreferences.getString("family", "");
+        Bitmap seged_bitmap_family = decodeToBase64(informacio_family);
+        Image_View22.setImageBitmap(seged_bitmap_family);
 
         Myself_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +72,7 @@ public class FamilyActivity extends AppCompatActivity {
                 ImageEn.setEnabled(false);
 
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
-                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View1.getDrawable()).getBitmap()));
+                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.commit();
             }
         });
@@ -87,7 +91,7 @@ public class FamilyActivity extends AppCompatActivity {
     private void init() {
         Myself_oldal = (ImageView) findViewById(R.id.Myself_oldal);
         button_kamera = findViewById(R.id.button_kamera);
-        Image_View1 = findViewById(R.id.Image_View11);
+        Image_View11 = findViewById(R.id.Image_View11);
         ImageViewGrandPa = findViewById(R.id.ImageViewGrandPa);
         ImageEn = findViewById(R.id.ImageEn);
         Image_View22 = findViewById(R.id.Image_View22);

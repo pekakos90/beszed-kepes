@@ -52,9 +52,9 @@ public class LoginActivity extends AppCompatActivity {
                 {
                     Intent belepes = new Intent(LoginActivity.this, Main2Activity.class);
                     startActivity(belepes);
-                    finish();
                     SharedPreferences.Editor editor =sharedPreferences.edit();
                     editor.clear();
+                    finish();
                 }
             }
         });
