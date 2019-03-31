@@ -17,7 +17,7 @@ import java.io.ByteArrayOutputStream;
 
 public class FamilyActivity extends AppCompatActivity {
 
-    private ImageView Myself_oldal, button_kamera, Image_View1, Image_View22, ImageViewGrandPa, Harmadik_oldal;
+    private ImageView Myself_oldal, button_kamera, Image_View1, Image_View2, Image_View22, ImageEn, ImageViewGrandPa, Harmadik_oldal;
 
     private SharedPreferences sharedPreferences;
 
@@ -60,16 +60,26 @@ public class FamilyActivity extends AppCompatActivity {
             }
         });
 
-        ImageViewGrandPa.setOnClickListener(new View.OnClickListener() {
+        ImageEn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Image_View22.setImageResource(R.mipmap.grandpa);
-                ImageViewGrandPa.setImageResource(R.mipmap.backpain);
-                ImageViewGrandPa.setEnabled(false);
+                Image_View22.setImageResource(R.mipmap.en);
+                ImageEn.setImageResource(R.mipmap.backpain);
+                ImageEn.setEnabled(false);
 
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View1.getDrawable()).getBitmap()));
                 editor.commit();
+            }
+        });
+
+        Image_View22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ImageEn.setImageResource(R.mipmap.en);
+                ImageEn.setEnabled(true);
+
+                Image_View22.setImageResource(0);
             }
         });
     }
@@ -79,6 +89,7 @@ public class FamilyActivity extends AppCompatActivity {
         button_kamera = findViewById(R.id.button_kamera);
         Image_View1 = findViewById(R.id.Image_View11);
         ImageViewGrandPa = findViewById(R.id.ImageViewGrandPa);
+        ImageEn = findViewById(R.id.ImageEn);
         Image_View22 = findViewById(R.id.Image_View22);
         Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
 
