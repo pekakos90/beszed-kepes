@@ -11,4 +11,5 @@
     <string name="male">Fiú</string>
     <string name="female">Lány</string>
     <string name="btn_sign_up">Regisztráció</string>
+    <string name="erzelmek">Érzelmek</string>
 </resources>

@@ -74,23 +74,20 @@ public class Main2Activity extends AppCompatActivity {
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("myself", encodeToBase64(((BitmapDrawable)Image_View1.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
         Image_11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!Image_View1.equals(Image_10))
                     Image_View1.setImageResource(R.mipmap.sad);
-                Image_11.setImageResource(R.mipmap.backpain);
-                Image_11.setEnabled(false);
-
-                //Itt hozzuk létre a sharedpreference-t//
-                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
-                editor.putString("myself", encodeToBase64(((BitmapDrawable)Image_View1.getDrawable()).getBitmap()));
-                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
-                editor.commit();
+                    Image_11.setImageResource(R.mipmap.backpain);
+                    Image_11.setEnabled(false);
+                    //Itt hozzuk létre a sharedpreference-t//
+                    SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                    editor.putString("myself", encodeToBase64(((BitmapDrawable) Image_View1.getDrawable()).getBitmap()));
+                    editor.apply();
             }
         });
 
@@ -102,7 +99,6 @@ public class Main2Activity extends AppCompatActivity {
 
                 Image_11.setImageResource(R.mipmap.sad);
                 Image_11.setEnabled(true);
-
 
 
                 Image_View1.setImageResource(0);
@@ -128,10 +124,6 @@ public class Main2Activity extends AppCompatActivity {
             Image_21 = (ImageView) findViewById(R.id.Image_21);
             Image_22 = (ImageView) findViewById(R.id.Image_22);
             Image_23 = (ImageView) findViewById(R.id.Image_23);
-            Image_30 = (ImageView) findViewById(R.id.Image_30);
-            Image_31 = (ImageView) findViewById(R.id.Image_31);
-            Image_32 = (ImageView) findViewById(R.id.Image_32);
-            Image_32 = (ImageView) findViewById(R.id.Image_32);
             Image_View22 = (ImageView) findViewById(R.id.Image_View22);
 
             sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);

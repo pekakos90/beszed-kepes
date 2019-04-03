@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="0.5"
+        android:layout_weight="0.45"
         android:scrollbars="none"
         android:orientation="horizontal"
         android:gravity="center"
@@ -37,7 +37,8 @@
             android:layout_width="15dp"
             android:layout_height="100dp"
             android:layout_weight="0.25"
-            android:padding="10dp" />
+            android:padding="10dp"
+            android:id="@+id/Image_View33"/>
 
         <ImageView
             android:layout_width="15dp"
@@ -48,207 +49,219 @@
 
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:layout_weight="0.2">
 
-        <TableLayout
-            android:id="@+id/tableLayout1"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:isScrollContainer="true">
+            android:scrollbars="none"
+            android:layout_weight="0.2">
 
-            <TableRow
-                android:id="@+id/tableRow1"
+            <TableLayout
+                android:id="@+id/tableLayout1"
                 android:layout_width="match_parent"
-                android:layout_height="92dp">
+                android:layout_height="match_parent"
+                android:isScrollContainer="true">
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/hugging"
-                    android:id="@+id/ImageViewGrandPa"/>
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp">
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/dressingup" />
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/breakfast" />
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/music" />
-
-            </TableRow>
-
-            <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="15dp"
-                android:layout_height="100dp"
-                android:layout_weight="0.25"
-                android:src="@mipmap/dancing"
-                android:padding="10dp" />
-
-            <ImageView
-                android:layout_width="15dp"
-                android:layout_height="100dp"
-                android:layout_weight="0.25"
-                android:src="@mipmap/dieta"
-                android:padding="10dp" />
-
-            <ImageView
-                android:layout_width="15dp"
-                android:layout_height="100dp"
-                android:layout_weight="0.25"
-                android:padding="10dp"
-                android:src="@mipmap/amagatall"/>
-
-            <ImageView
-                android:layout_width="15dp"
-                android:layout_height="100dp"
-                android:layout_weight="0.25"
-                android:padding="10dp"
-                android:src="@mipmap/cleaning"/>
-
-        </TableRow>
-
-            <TableRow
-                android:id="@+id/tableRow3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:src="@mipmap/getup"
-                    android:padding="10dp" />
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:src="@mipmap/szervezetlen"
-                    android:padding="10dp" />
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/walking"/>
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/aludni_2"/>
-
-            </TableRow>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/hugging"
+                        android:id="@+id/IdHug" />
 
 
-            <TableRow
-                android:id="@+id/tableRow4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/dressingup"
+                        android:id="@+id/IdDressing"/>
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:src="@mipmap/beszelget"
-                    android:padding="10dp" />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/breakfast"
+                        android:id="@+id/IdBreakfast"/>
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:src="@mipmap/festhajat"
-                    android:padding="10dp" />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/music"
+                        android:id="@+id/IdMusic"/>
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/foci"/>
+                </TableRow>
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/fotoz"/>
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-            </TableRow>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:src="@mipmap/dancing"
+                        android:id="@+id/IdDancing"
+                        android:padding="10dp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:src="@mipmap/dieta"
+                        android:id="@+id/IdDieta"
+                        android:padding="10dp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/amagatall"
+                        android:id="@+id/IdHideSeek"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/cleaning"
+                        android:id="@+id/IdCleaning"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:src="@mipmap/getup"
+                        android:padding="10dp"
+                        android:id="@+id/IdGetup"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:src="@mipmap/szervezetlen"
+                        android:padding="10dp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/walking"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/aludni_2"/>
+
+                </TableRow>
 
 
-            <TableRow
-                android:id="@+id/tableRow5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:src="@mipmap/hinta"
-                    android:padding="10dp" />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:src="@mipmap/beszelget"
+                        android:padding="10dp" />
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:src="@mipmap/vadaszat"
-                    android:padding="10dp" />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:src="@mipmap/festhajat"
+                        android:padding="10dp" />
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/fesul"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/foci"/>
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="0.25"
-                    android:padding="10dp"
-                    android:src="@mipmap/kemping"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/fotoz"/>
 
-            </TableRow>
+                </TableRow>
 
-        </TableLayout>
 
-    </ScrollView>
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:src="@mipmap/hinta"
+                        android:padding="10dp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:src="@mipmap/vadaszat"
+                        android:padding="10dp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/fesul"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.25"
+                        android:padding="10dp"
+                        android:src="@mipmap/kemping"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+
+
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.5"
+        android:layout_weight="0.4"
         android:scrollbars="none">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -259,40 +272,51 @@
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/me" />
+                android:src="@mipmap/girl" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/FirstText"
+                android:layout_below="@id/Myself_oldal"
+                android:text="@string/erzelmek"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="18dp"
+                android:background="@color/white"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/Family_oldal"
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/family" />
+                android:src="@mipmap/family"
+                android:layout_toRightOf="@id/Myself_oldal"/>
 
             <ImageView
                 android:id="@+id/Harmadik_oldal"
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/dancing" />
+                android:src="@mipmap/dancing"
+                android:layout_toRightOf="@id/Family_oldal"/>
 
             <ImageView
                 android:id="@+id/negyedik_oldal"
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/cold" />
+                android:src="@mipmap/cold"
+                android:layout_toRightOf="@id/Harmadik_oldal"/>
 
             <ImageView
                 android:id="@+id/otodik_oldal"
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/drinking" />
+                android:src="@mipmap/drinking"
+                android:layout_toRightOf="@id/negyedik_oldal"/>
 
 
             <ImageView
@@ -300,12 +324,11 @@
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/camera" />
+                android:src="@mipmap/camera"
+                android:layout_toRightOf="@id/otodik_oldal"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </HorizontalScrollView>
-
 
 </LinearLayout>
