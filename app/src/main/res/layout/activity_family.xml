@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="0.5"
+        android:layout_weight="0.42"
         android:scrollbars="none"
         android:orientation="horizontal"
         android:gravity="center"
@@ -140,10 +140,10 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.5"
+        android:layout_weight="0.4"
         android:scrollbars="none">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -154,40 +154,51 @@
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/me" />
+                android:src="@mipmap/girl" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/FirstText"
+                android:layout_below="@id/Myself_oldal"
+                android:text="@string/erzelmek"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="18dp"
+                android:background="@color/white"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/Family_oldal"
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/family" />
+                android:src="@mipmap/family"
+                android:layout_toRightOf="@id/Myself_oldal"/>
 
             <ImageView
                 android:id="@+id/Harmadik_oldal"
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/dancing" />
+                android:src="@mipmap/dancing"
+                android:layout_toRightOf="@id/Family_oldal"/>
 
             <ImageView
                 android:id="@+id/negyedik_oldal"
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/cold" />
+                android:src="@mipmap/cold"
+                android:layout_toRightOf="@id/Harmadik_oldal"/>
 
             <ImageView
                 android:id="@+id/otodik_oldal"
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/drinking" />
+                android:src="@mipmap/drinking"
+                android:layout_toRightOf="@id/negyedik_oldal"/>
 
 
             <ImageView
@@ -195,10 +206,10 @@
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:padding="10dp"
-                android:src="@mipmap/camera" />
+                android:src="@mipmap/camera"
+                android:layout_toRightOf="@id/otodik_oldal"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </HorizontalScrollView>
 

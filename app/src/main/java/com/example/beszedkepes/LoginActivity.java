@@ -53,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                     Intent belepes = new Intent(LoginActivity.this, Main2Activity.class);
                     startActivity(belepes);
                     SharedPreferences.Editor editor =sharedPreferences.edit();
+                    Toast.makeText(LoginActivity.this, "Helló, " + belsofhnev, Toast.LENGTH_SHORT).show();
                     editor.clear();
                     finish();
                 }

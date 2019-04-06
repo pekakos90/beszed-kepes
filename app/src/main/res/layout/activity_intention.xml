@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="0.45"
+        android:layout_weight="0.42"
         android:scrollbars="none"
         android:orientation="horizontal"
         android:gravity="center"
@@ -269,9 +269,9 @@
 
             <ImageView
                 android:id="@+id/Myself_oldal"
-                android:layout_width="81dp"
-                android:layout_height="91dp"
-                android:layout_margin="10dp"
+                android:layout_width="61dp"
+                android:layout_height="71dp"
+                android:layout_margin="20dp"
                 android:src="@mipmap/girl" />
 
             <TextView
@@ -282,38 +282,62 @@
                 android:text="@string/erzelmek"
                 android:textSize="16dp"
                 android:textColor="@color/black"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="15dp"
                 android:background="@color/white"
                 android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/Family_oldal"
-                android:layout_width="81dp"
-                android:layout_height="91dp"
-                android:layout_margin="10dp"
+                android:layout_width="61dp"
+                android:layout_height="71dp"
+                android:layout_margin="20dp"
                 android:src="@mipmap/family"
                 android:layout_toRightOf="@id/Myself_oldal"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SecondText"
+                android:layout_below="@id/Family_oldal"
+                android:text="@string/csalad"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="130dp"
+                android:background="@color/white"
+                android:textStyle="bold"/>
+
             <ImageView
                 android:id="@+id/Harmadik_oldal"
-                android:layout_width="81dp"
-                android:layout_height="91dp"
-                android:layout_margin="10dp"
+                android:layout_width="61dp"
+                android:layout_height="71dp"
+                android:layout_margin="20dp"
                 android:src="@mipmap/dancing"
                 android:layout_toRightOf="@id/Family_oldal"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ThirdText"
+                android:layout_below="@id/Harmadik_oldal"
+                android:text="@string/tevekenyseg"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="210dp"
+                android:background="@color/white"
+                android:textStyle="bold"/>
+
             <ImageView
                 android:id="@+id/negyedik_oldal"
-                android:layout_width="81dp"
-                android:layout_height="91dp"
-                android:layout_margin="10dp"
+                android:layout_width="61dp"
+                android:layout_height="71dp"
+                android:layout_margin="20dp"
                 android:src="@mipmap/cold"
                 android:layout_toRightOf="@id/Harmadik_oldal"/>
 
             <ImageView
                 android:id="@+id/otodik_oldal"
-                android:layout_width="81dp"
-                android:layout_height="91dp"
+                android:layout_width="61dp"
+                android:layout_height="71dp"
                 android:layout_margin="10dp"
                 android:src="@mipmap/drinking"
                 android:layout_toRightOf="@id/negyedik_oldal"/>
@@ -321,9 +345,9 @@
 
             <ImageView
                 android:id="@+id/button_kamera"
-                android:layout_width="81dp"
-                android:layout_height="91dp"
-                android:layout_margin="10dp"
+                android:layout_width="61dp"
+                android:layout_height="71dp"
+                android:layout_margin="20dp"
                 android:src="@mipmap/camera"
                 android:layout_toRightOf="@id/otodik_oldal"/>
 

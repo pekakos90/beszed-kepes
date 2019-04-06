@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
@@ -36,6 +37,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         init();
+
 
         String informacio = sharedPreferences.getString("myself","");
         Bitmap seged_bitmap = decodeToBase64(informacio);
@@ -81,27 +83,64 @@ public class Main2Activity extends AppCompatActivity {
         Image_11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Image_View1.setImageResource(R.mipmap.sad);
-                    Image_11.setImageResource(R.mipmap.backpain);
-                    Image_11.setEnabled(false);
-                    //Itt hozzuk létre a sharedpreference-t//
-                    SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
-                    editor.putString("myself", encodeToBase64(((BitmapDrawable) Image_View1.getDrawable()).getBitmap()));
-                    editor.apply();
+                Image_View1.setImageResource(R.mipmap.sad);
+                Image_11.setImageResource(R.mipmap.backpain);
+                Image_11.setEnabled(false);
+                //Itt hozzuk létre a sharedpreference-t//
+                SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("myself", encodeToBase64(((BitmapDrawable) Image_View1.getDrawable()).getBitmap()));
+                editor.apply();
+            }
+        });
+
+        Image_12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Image_View1.setImageResource(R.mipmap.suprised);
+                Image_12.setImageResource(R.mipmap.backpain);
+                Image_12.setEnabled(false);
+                //Itt hozzuk létre a sharedpreference-t//
+                SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("myself", encodeToBase64(((BitmapDrawable) Image_View1.getDrawable()).getBitmap()));
+                editor.apply();
+            }
+        });
+
+        Image_13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Image_View1.setImageResource(R.mipmap.sick);
+                Image_13.setImageResource(R.mipmap.backpain);
+                Image_13.setEnabled(false);
+                //Itt hozzuk létre a sharedpreference-t//
+                SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("myself", encodeToBase64(((BitmapDrawable) Image_View1.getDrawable()).getBitmap()));
+                editor.apply();
             }
         });
 
         Image_View1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Image_10.setImageResource(R.mipmap.girl);
-                Image_10.setEnabled(true);
-
-                Image_11.setImageResource(R.mipmap.sad);
-                Image_11.setEnabled(true);
-
-
-                Image_View1.setImageResource(0);
+                switch (v.getId()){
+                    case 1:
+                        if(Image_View1.equals(R.mipmap.girl))
+                        {
+                            Image_10.setImageResource(R.mipmap.girl);
+                            Image_10.setEnabled(true);
+                            Image_View1.setImageResource(0);
+                            break;
+                        }
+                    case 2:
+                        if(Image_View1.equals(R.mipmap.sad)){
+                            Image_11.setImageResource(R.mipmap.sad);
+                            Image_11.setEnabled(true);
+                            Image_View1.setImageResource(0);
+                            break;
+                        }
+                        default:
+                            Toast.makeText(Main2Activity.this, "Nincs kép kiválasztva", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

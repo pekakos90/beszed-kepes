@@ -12,4 +12,7 @@
     <string name="female">Lány</string>
     <string name="btn_sign_up">Regisztráció</string>
     <string name="erzelmek">Érzelmek</string>
+    <string name="csalad">Család</string>
+    <string name="tevekenyseg">Tevékenység</string>
+    <string name="etel">Étel-Ital</string>
 </resources>

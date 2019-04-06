@@ -19,9 +19,9 @@ public class RegisterActivity extends AppCompatActivity {
 
     private static final String TAG = "RegisterActivity";
     private TextInputLayout signup_input_layout_name, signup_input_layout_username,
-            signup_input_layout_password, signup_input_layout_age;
+            signup_input_layout_password, signup_input_layout_password1, signup_input_layout_age;
     private Button btn_signup;
-    private EditText edit_name, edit_username, edit_passw;
+    private EditText edit_name, edit_username, edit_passw, edit_passw1;
     private TextView gender_textview;
     private RadioButton male_radio_btn, female_radio_btn;
     private RadioGroup gender_radio_group;
