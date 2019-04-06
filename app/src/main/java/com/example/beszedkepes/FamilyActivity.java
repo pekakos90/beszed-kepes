@@ -17,7 +17,9 @@ import java.io.ByteArrayOutputStream;
 
 public class FamilyActivity extends AppCompatActivity {
 
-    private ImageView Myself_oldal, button_kamera, Image_View11, Image_View2, Image_View22, ImageEn, ImageViewGrandPa, Harmadik_oldal;
+    private ImageView Myself_oldal, button_kamera, Image_View11,
+            Image_View33, Image_View22, ImageEn, ImageGrandPa,ImageOlderbro,ImageOldersis,
+            ImageGrandma,ImageYoungerbro, ImageYoungersis,  Harmadik_oldal;
 
     private SharedPreferences sharedPreferences;
 
@@ -36,6 +38,10 @@ public class FamilyActivity extends AppCompatActivity {
         String informacio_family = sharedPreferences.getString("family", "");
         Bitmap seged_bitmap_family = decodeToBase64(informacio_family);
         Image_View22.setImageBitmap(seged_bitmap_family);
+
+        String informacio_intention = sharedPreferences.getString("intention", "");
+        Bitmap seged_bitmap_intention = decodeToBase64(informacio_intention);
+        Image_View33.setImageBitmap(seged_bitmap_intention);
 
         Myself_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,10 +73,179 @@ public class FamilyActivity extends AppCompatActivity {
         ImageEn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Image_View22.setImageResource(R.mipmap.en);
-                ImageEn.setImageResource(R.mipmap.backpain);
-                ImageEn.setEnabled(false);
+                if(!Image_View22.equals("")){
+                    Image_View22.setImageResource(R.mipmap.en);
+                    ImageEn.setImageResource(R.mipmap.backpain);
+                    ImageEn.setEnabled(false);
+                    ImageGrandPa.setImageResource(R.mipmap.grandpa);
+                    ImageGrandPa.setEnabled(true);
+                    ImageGrandma.setImageResource(R.mipmap.grandma);
+                    ImageGrandma.setEnabled(true);
+                    ImageOlderbro.setImageResource(R.mipmap.olderbrother);
+                    ImageOlderbro.setEnabled(true);
+                    ImageOldersis.setImageResource(R.mipmap.oldersister);
+                    ImageOldersis.setEnabled(true);
+                    ImageYoungerbro.setImageResource(R.mipmap.youngerbrother);
+                    ImageYoungerbro.setEnabled(true);
+                    ImageYoungersis.setImageResource(R.mipmap.youngersister);
+                    ImageYoungersis.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
 
+        ImageGrandPa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View22.equals("")){
+                    Image_View22.setImageResource(R.mipmap.grandpa);
+                    ImageEn.setImageResource(R.mipmap.en);
+                    ImageEn.setEnabled(true);
+                    ImageGrandPa.setImageResource(R.mipmap.backpain);
+                    ImageGrandPa.setEnabled(false);
+                    ImageGrandma.setImageResource(R.mipmap.grandma);
+                    ImageGrandma.setEnabled(true);
+                    ImageOlderbro.setImageResource(R.mipmap.olderbrother);
+                    ImageOlderbro.setEnabled(true);
+                    ImageOldersis.setImageResource(R.mipmap.oldersister);
+                    ImageOldersis.setEnabled(true);
+                    ImageYoungerbro.setImageResource(R.mipmap.youngerbrother);
+                    ImageYoungerbro.setEnabled(true);
+                    ImageYoungersis.setImageResource(R.mipmap.youngersister);
+                    ImageYoungersis.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        ImageGrandma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View22.equals("")){
+                    Image_View22.setImageResource(R.mipmap.grandma);
+                    ImageEn.setImageResource(R.mipmap.en);
+                    ImageEn.setEnabled(true);
+                    ImageGrandPa.setImageResource(R.mipmap.grandpa);
+                    ImageGrandPa.setEnabled(true);
+                    ImageGrandma.setImageResource(R.mipmap.backpain);
+                    ImageGrandma.setEnabled(false);
+                    ImageOlderbro.setImageResource(R.mipmap.olderbrother);
+                    ImageOlderbro.setEnabled(true);
+                    ImageOldersis.setImageResource(R.mipmap.oldersister);
+                    ImageOldersis.setEnabled(true);
+                    ImageYoungerbro.setImageResource(R.mipmap.youngerbrother);
+                    ImageYoungerbro.setEnabled(true);
+                    ImageYoungersis.setImageResource(R.mipmap.youngersister);
+                    ImageYoungersis.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        ImageOlderbro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View22.equals("")){
+                    Image_View22.setImageResource(R.mipmap.olderbrother);
+                    ImageEn.setImageResource(R.mipmap.en);
+                    ImageEn.setEnabled(true);
+                    ImageGrandPa.setImageResource(R.mipmap.grandpa);
+                    ImageGrandPa.setEnabled(true);
+                    ImageGrandma.setImageResource(R.mipmap.grandma);
+                    ImageGrandma.setEnabled(true);
+                    ImageOlderbro.setImageResource(R.mipmap.backpain);
+                    ImageOlderbro.setEnabled(false);
+                    ImageOldersis.setImageResource(R.mipmap.oldersister);
+                    ImageOldersis.setEnabled(true);
+                    ImageYoungerbro.setImageResource(R.mipmap.youngerbrother);
+                    ImageYoungerbro.setEnabled(true);
+                    ImageYoungersis.setImageResource(R.mipmap.youngersister);
+                    ImageYoungersis.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        ImageOldersis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View22.equals("")){
+                    Image_View22.setImageResource(R.mipmap.oldersister);
+                    ImageEn.setImageResource(R.mipmap.en);
+                    ImageEn.setEnabled(true);
+                    ImageGrandPa.setImageResource(R.mipmap.grandpa);
+                    ImageGrandPa.setEnabled(true);
+                    ImageGrandma.setImageResource(R.mipmap.grandma);
+                    ImageGrandma.setEnabled(true);
+                    ImageOlderbro.setImageResource(R.mipmap.olderbrother);
+                    ImageOlderbro.setEnabled(true);
+                    ImageOldersis.setImageResource(R.mipmap.backpain);
+                    ImageOldersis.setEnabled(false);
+                    ImageYoungerbro.setImageResource(R.mipmap.youngerbrother);
+                    ImageYoungerbro.setEnabled(true);
+                    ImageYoungersis.setImageResource(R.mipmap.youngersister);
+                    ImageYoungersis.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        ImageYoungerbro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View22.equals("")){
+                    Image_View22.setImageResource(R.mipmap.youngerbrother);
+                    ImageEn.setImageResource(R.mipmap.en);
+                    ImageEn.setEnabled(true);
+                    ImageGrandPa.setImageResource(R.mipmap.grandpa);
+                    ImageGrandPa.setEnabled(true);
+                    ImageGrandma.setImageResource(R.mipmap.grandma);
+                    ImageGrandma.setEnabled(true);
+                    ImageOlderbro.setImageResource(R.mipmap.olderbrother);
+                    ImageOlderbro.setEnabled(true);
+                    ImageOldersis.setImageResource(R.mipmap.oldersister);
+                    ImageOldersis.setEnabled(true);
+                    ImageYoungerbro.setImageResource(R.mipmap.backpain);
+                    ImageYoungerbro.setEnabled(false);
+                    ImageYoungersis.setImageResource(R.mipmap.youngersister);
+                    ImageYoungersis.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        ImageYoungersis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View22.equals("")){
+                    Image_View22.setImageResource(R.mipmap.youngersister);
+                    ImageEn.setImageResource(R.mipmap.en);
+                    ImageEn.setEnabled(true);
+                    ImageGrandPa.setImageResource(R.mipmap.grandpa);
+                    ImageGrandPa.setEnabled(true);
+                    ImageGrandma.setImageResource(R.mipmap.grandma);
+                    ImageGrandma.setEnabled(true);
+                    ImageOlderbro.setImageResource(R.mipmap.olderbrother);
+                    ImageOlderbro.setEnabled(true);
+                    ImageOldersis.setImageResource(R.mipmap.oldersister);
+                    ImageOldersis.setEnabled(true);
+                    ImageYoungerbro.setImageResource(R.mipmap.youngerbrother);
+                    ImageYoungerbro.setEnabled(true);
+                    ImageYoungersis.setImageResource(R.mipmap.backpain);
+                    ImageYoungersis.setEnabled(false);
+                }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.commit();
@@ -82,7 +257,18 @@ public class FamilyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 ImageEn.setImageResource(R.mipmap.en);
                 ImageEn.setEnabled(true);
-
+                ImageGrandPa.setImageResource(R.mipmap.grandpa);
+                ImageGrandPa.setEnabled(true);
+                ImageGrandma.setImageResource(R.mipmap.grandma);
+                ImageGrandma.setEnabled(true);
+                ImageOlderbro.setImageResource(R.mipmap.olderbrother);
+                ImageOlderbro.setEnabled(true);
+                ImageOldersis.setImageResource(R.mipmap.oldersister);
+                ImageOldersis.setEnabled(true);
+                ImageYoungerbro.setImageResource(R.mipmap.youngerbrother);
+                ImageYoungerbro.setEnabled(true);
+                ImageYoungersis.setImageResource(R.mipmap.youngersister);
+                ImageYoungersis.setEnabled(true);
                 Image_View22.setImageResource(0);
             }
         });
@@ -92,9 +278,15 @@ public class FamilyActivity extends AppCompatActivity {
         Myself_oldal = (ImageView) findViewById(R.id.Myself_oldal);
         button_kamera = findViewById(R.id.button_kamera);
         Image_View11 = findViewById(R.id.Image_View11);
-        ImageViewGrandPa = findViewById(R.id.ImageViewGrandPa);
+        ImageGrandPa = findViewById(R.id.ImageGrandPa);
+        ImageGrandma = findViewById(R.id.ImageGrandma);
+        ImageOlderbro = findViewById(R.id.ImageOlderbro);
+        ImageOldersis = findViewById(R.id.ImageOldersis);
+        ImageYoungerbro = findViewById(R.id.ImageYoungerbro);
+        ImageYoungersis = findViewById(R.id.ImageYoungersis);
         ImageEn = findViewById(R.id.ImageEn);
         Image_View22 = findViewById(R.id.Image_View22);
+        Image_View33 = findViewById(R.id.Image_View33);
         Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
 
         sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);

@@ -27,7 +27,7 @@ public class Main2Activity extends AppCompatActivity {
     private ImageView Family_oldal, button_kamera, Image_View1, Image_View22,
             Image_10, Image_View2, Image_View3, Image_View4,
             Image_11, Image_12, Image_13, Image_20, Image_21, Image_22, Image_23, Image_30,
-            Image_31, Image_32, Image_33;
+            Image_31, Image_32, Image_33, Harmadik_oldal;
 
     private SharedPreferences sharedPreferences;
 
@@ -47,11 +47,24 @@ public class Main2Activity extends AppCompatActivity {
         Bitmap seged_bitmap_family = decodeToBase64(informacio_family);
         Image_View2.setImageBitmap(seged_bitmap_family);
 
+        String informacio_intention = sharedPreferences.getString("intention", "");
+        Bitmap seged_bitmap_intention = decodeToBase64(informacio_intention);
+        Image_View3.setImageBitmap(seged_bitmap_intention);
+
         Family_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent family_activity = new Intent(Main2Activity.this, FamilyActivity.class);
                 startActivity(family_activity);
+                finish();
+            }
+        });
+
+        Harmadik_oldal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intention_activity = new Intent(Main2Activity.this, IntentionActivity.class);
+                startActivity(intention_activity);
                 finish();
             }
         });
@@ -247,6 +260,7 @@ public class Main2Activity extends AppCompatActivity {
         {
             Family_oldal = (ImageView) findViewById(R.id.Family_oldal);
             button_kamera = (ImageView) findViewById(R.id.button_kamera);
+            Harmadik_oldal = (ImageView) findViewById(R.id.Harmadik_oldal);
             Image_View1 = (ImageView) findViewById(R.id.Image_View1);
             Image_View2 = (ImageView) findViewById(R.id.Image_View2);
             Image_View3 = (ImageView) findViewById(R.id.Image_View3);
