@@ -281,6 +281,7 @@
                 android:layout_below="@id/Myself_oldal"
                 android:text="@string/erzelmek"
                 android:textSize="16sp"
+                android:padding="5dp"
                 android:textColor="@color/black"
                 android:layout_marginLeft="15dp"
                 android:background="@color/white"

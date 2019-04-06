@@ -75,7 +75,7 @@ public class FamilyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View22.equals("")){
                     Image_View22.setImageResource(R.mipmap.en);
-                    ImageEn.setImageResource(R.mipmap.backpain);
+                    ImageEn.setImageResource(R.mipmap.psbuttonx);
                     ImageEn.setEnabled(false);
                     ImageGrandPa.setImageResource(R.mipmap.grandpa);
                     ImageGrandPa.setEnabled(true);
@@ -103,7 +103,7 @@ public class FamilyActivity extends AppCompatActivity {
                     Image_View22.setImageResource(R.mipmap.grandpa);
                     ImageEn.setImageResource(R.mipmap.en);
                     ImageEn.setEnabled(true);
-                    ImageGrandPa.setImageResource(R.mipmap.backpain);
+                    ImageGrandPa.setImageResource(R.mipmap.psbuttonx);
                     ImageGrandPa.setEnabled(false);
                     ImageGrandma.setImageResource(R.mipmap.grandma);
                     ImageGrandma.setEnabled(true);
@@ -131,7 +131,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageEn.setEnabled(true);
                     ImageGrandPa.setImageResource(R.mipmap.grandpa);
                     ImageGrandPa.setEnabled(true);
-                    ImageGrandma.setImageResource(R.mipmap.backpain);
+                    ImageGrandma.setImageResource(R.mipmap.psbuttonx);
                     ImageGrandma.setEnabled(false);
                     ImageOlderbro.setImageResource(R.mipmap.olderbrother);
                     ImageOlderbro.setEnabled(true);
@@ -159,7 +159,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageGrandPa.setEnabled(true);
                     ImageGrandma.setImageResource(R.mipmap.grandma);
                     ImageGrandma.setEnabled(true);
-                    ImageOlderbro.setImageResource(R.mipmap.backpain);
+                    ImageOlderbro.setImageResource(R.mipmap.psbuttonx);
                     ImageOlderbro.setEnabled(false);
                     ImageOldersis.setImageResource(R.mipmap.oldersister);
                     ImageOldersis.setEnabled(true);
@@ -187,7 +187,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageGrandma.setEnabled(true);
                     ImageOlderbro.setImageResource(R.mipmap.olderbrother);
                     ImageOlderbro.setEnabled(true);
-                    ImageOldersis.setImageResource(R.mipmap.backpain);
+                    ImageOldersis.setImageResource(R.mipmap.psbuttonx);
                     ImageOldersis.setEnabled(false);
                     ImageYoungerbro.setImageResource(R.mipmap.youngerbrother);
                     ImageYoungerbro.setEnabled(true);
@@ -215,7 +215,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageOlderbro.setEnabled(true);
                     ImageOldersis.setImageResource(R.mipmap.oldersister);
                     ImageOldersis.setEnabled(true);
-                    ImageYoungerbro.setImageResource(R.mipmap.backpain);
+                    ImageYoungerbro.setImageResource(R.mipmap.psbuttonx);
                     ImageYoungerbro.setEnabled(false);
                     ImageYoungersis.setImageResource(R.mipmap.youngersister);
                     ImageYoungersis.setEnabled(true);
@@ -243,7 +243,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageOldersis.setEnabled(true);
                     ImageYoungerbro.setImageResource(R.mipmap.youngerbrother);
                     ImageYoungerbro.setEnabled(true);
-                    ImageYoungersis.setImageResource(R.mipmap.backpain);
+                    ImageYoungersis.setImageResource(R.mipmap.psbuttonx);
                     ImageYoungersis.setEnabled(false);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
