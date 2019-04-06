@@ -122,25 +122,15 @@ public class Main2Activity extends AppCompatActivity {
         Image_View1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()){
-                    case 1:
-                        if(Image_View1.equals(R.mipmap.girl))
-                        {
-                            Image_10.setImageResource(R.mipmap.girl);
-                            Image_10.setEnabled(true);
-                            Image_View1.setImageResource(0);
-                            break;
-                        }
-                    case 2:
-                        if(Image_View1.equals(R.mipmap.sad)){
-                            Image_11.setImageResource(R.mipmap.sad);
-                            Image_11.setEnabled(true);
-                            Image_View1.setImageResource(0);
-                            break;
-                        }
-                        default:
-                            Toast.makeText(Main2Activity.this, "Nincs kép kiválasztva", Toast.LENGTH_SHORT).show();
-                }
+                Image_10.setImageResource(R.mipmap.girl);
+                Image_10.setEnabled(true);
+                Image_11.setImageResource(R.mipmap.sad);
+                Image_11.setEnabled(true);
+                Image_12.setImageResource(R.mipmap.suprised);
+                Image_12.setEnabled(true);
+                Image_13.setImageResource(R.mipmap.sick);
+                Image_13.setEnabled(true);
+                Image_View1.setImageResource(0);
             }
         });
 
