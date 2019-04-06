@@ -158,6 +158,7 @@
                         android:id="@+id/IdGetup"/>
 
                     <ImageView
+                        android:id="@+id/IdOlvas"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
@@ -165,6 +166,7 @@
                         android:padding="10dp" />
 
                     <ImageView
+                        android:id="@+id/IdSeta"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
@@ -172,6 +174,7 @@
                         android:src="@mipmap/walking"/>
 
                     <ImageView
+                        android:id="@+id/IdAludni"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
@@ -187,6 +190,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/IdBeszel"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
@@ -194,6 +198,7 @@
                         android:padding="10dp" />
 
                     <ImageView
+                        android:id="@+id/IdHajfest"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
@@ -201,6 +206,7 @@
                         android:padding="10dp" />
 
                     <ImageView
+                        android:id="@+id/IdFoci"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
@@ -208,6 +214,7 @@
                         android:src="@mipmap/foci"/>
 
                     <ImageView
+                        android:id="@+id/IdFotoz"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
@@ -223,6 +230,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/IdHinta"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
@@ -230,6 +238,7 @@
                         android:padding="10dp" />
 
                     <ImageView
+                        android:id="@+id/IdVadasz"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
@@ -237,6 +246,7 @@
                         android:padding="10dp" />
 
                     <ImageView
+                        android:id="@+id/IdFesul"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
@@ -244,6 +254,7 @@
                         android:src="@mipmap/fesul"/>
 
                     <ImageView
+                        android:id="@+id/IdKemping"
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"

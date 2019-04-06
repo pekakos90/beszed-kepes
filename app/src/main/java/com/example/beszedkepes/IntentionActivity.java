@@ -21,7 +21,8 @@ public class IntentionActivity extends AppCompatActivity {
 
     private ImageView Myself_oldal, Family_oldal, Image_View11, Image_View22, Image_View33,
             Image_View44, IdGetup, IdBreakfast, IdDressing, IdHug, IdHideSeek, IdCleaning, IdDancing,
-    IdDieta, IdMusic;
+            IdDieta, IdMusic, IdOlvas, IdSeta, IdAludni, IdBeszel, IdHajfest, IdFoci, IdFotoz, IdHinta,
+            IdVadasz, IdFesul, IdKemping;
     private TableLayout tableLayout1;
     private SharedPreferences sharedPreferences;
 
@@ -85,6 +86,28 @@ public class IntentionActivity extends AppCompatActivity {
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
@@ -115,6 +138,28 @@ public class IntentionActivity extends AppCompatActivity {
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
@@ -145,6 +190,28 @@ public class IntentionActivity extends AppCompatActivity {
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
@@ -175,6 +242,28 @@ public class IntentionActivity extends AppCompatActivity {
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
@@ -205,6 +294,28 @@ public class IntentionActivity extends AppCompatActivity {
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
@@ -235,6 +346,28 @@ public class IntentionActivity extends AppCompatActivity {
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
@@ -265,6 +398,28 @@ public class IntentionActivity extends AppCompatActivity {
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
@@ -295,6 +450,28 @@ public class IntentionActivity extends AppCompatActivity {
                     IdCleaning.setEnabled(false);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
@@ -325,6 +502,600 @@ public class IntentionActivity extends AppCompatActivity {
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.psbuttonx);
                     IdGetup.setEnabled(false);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdOlvas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.szervezetlen);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.psbuttonx);
+                    IdOlvas.setEnabled(false);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdSeta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.walking);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.psbuttonx);
+                    IdSeta.setEnabled(false);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdAludni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.aludni_2);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.psbuttonx);
+                    IdAludni.setEnabled(false);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdBeszel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.beszelget);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.psbuttonx);
+                    IdBeszel.setEnabled(false);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdHajfest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.festhajat);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.psbuttonx);
+                    IdHajfest.setEnabled(false);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdFoci.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.foci);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.psbuttonx);
+                    IdFoci.setEnabled(false);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdFotoz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.fotoz);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.psbuttonx);
+                    IdFotoz.setEnabled(false);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdHinta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.hinta);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.psbuttonx);
+                    IdHinta.setEnabled(false);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdVadasz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.vadaszat);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.psbuttonx);
+                    IdVadasz.setEnabled(false);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdFesul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.fesul);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.psbuttonx);
+                    IdFesul.setEnabled(false);
+                    IdKemping.setImageResource(R.mipmap.kemping);
+                    IdKemping.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
+                editor.commit();
+            }
+        });
+
+        IdKemping.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View33.equals("")){
+                    Image_View33.setImageResource(R.mipmap.kemping);
+                    IdHug.setImageResource(R.mipmap.hugging);
+                    IdHug.setEnabled(true);
+                    IdDressing.setImageResource(R.mipmap.dressingup);
+                    IdDressing.setEnabled(true);
+                    IdBreakfast.setImageResource(R.mipmap.breakfast);
+                    IdBreakfast.setEnabled(true);
+                    IdMusic.setImageResource(R.mipmap.music);
+                    IdMusic.setEnabled(true);
+                    IdDancing.setImageResource(R.mipmap.dancing);
+                    IdDancing.setEnabled(true);
+                    IdDieta.setImageResource(R.mipmap.dieta);
+                    IdDieta.setEnabled(true);
+                    IdHideSeek.setImageResource(R.mipmap.amagatall);
+                    IdHideSeek.setEnabled(true);
+                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setEnabled(true);
+                    IdGetup.setImageResource(R.mipmap.getup);
+                    IdGetup.setEnabled(true);
+                    IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                    IdOlvas.setEnabled(true);
+                    IdSeta.setImageResource(R.mipmap.walking);
+                    IdSeta.setEnabled(true);
+                    IdAludni.setImageResource(R.mipmap.aludni_2);
+                    IdAludni.setEnabled(true);
+                    IdBeszel.setImageResource(R.mipmap.beszelget);
+                    IdBeszel.setEnabled(true);
+                    IdHajfest.setImageResource(R.mipmap.festhajat);
+                    IdHajfest.setEnabled(true);
+                    IdFoci.setImageResource(R.mipmap.foci);
+                    IdFoci.setEnabled(true);
+                    IdFotoz.setImageResource(R.mipmap.fotoz);
+                    IdFotoz.setEnabled(true);
+                    IdHinta.setImageResource(R.mipmap.hinta);
+                    IdHinta.setEnabled(true);
+                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setEnabled(true);
+                    IdFesul.setImageResource(R.mipmap.fesul);
+                    IdFesul.setEnabled(true);
+                    IdKemping.setImageResource(R.mipmap.psbuttonx);
+                    IdKemping.setEnabled(false);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
@@ -348,11 +1119,33 @@ public class IntentionActivity extends AppCompatActivity {
                 IdDieta.setImageResource(R.mipmap.dieta);
                 IdDieta.setEnabled(true);
                 IdHideSeek.setImageResource(R.mipmap.amagatall);
-                IdHideSeek.setEnabled(false);
+                IdHideSeek.setEnabled(true);
                 IdCleaning.setImageResource(R.mipmap.cleaning);
                 IdCleaning.setEnabled(true);
                 IdGetup.setImageResource(R.mipmap.getup);
                 IdGetup.setEnabled(true);
+                IdOlvas.setImageResource(R.mipmap.szervezetlen);
+                IdOlvas.setEnabled(true);
+                IdSeta.setImageResource(R.mipmap.walking);
+                IdSeta.setEnabled(true);
+                IdAludni.setImageResource(R.mipmap.aludni_2);
+                IdAludni.setEnabled(true);
+                IdBeszel.setImageResource(R.mipmap.beszelget);
+                IdBeszel.setEnabled(true);
+                IdHajfest.setImageResource(R.mipmap.festhajat);
+                IdHajfest.setEnabled(true);
+                IdFoci.setImageResource(R.mipmap.foci);
+                IdFoci.setEnabled(true);
+                IdFotoz.setImageResource(R.mipmap.fotoz);
+                IdFotoz.setEnabled(true);
+                IdHinta.setImageResource(R.mipmap.hinta);
+                IdHinta.setEnabled(true);
+                IdVadasz.setImageResource(R.mipmap.vadaszat);
+                IdVadasz.setEnabled(true);
+                IdFesul.setImageResource(R.mipmap.fesul);
+                IdFesul.setEnabled(true);
+                IdKemping.setImageResource(R.mipmap.kemping);
+                IdKemping.setEnabled(true);
                 Image_View33.setImageResource(0);
             }
         });
@@ -374,6 +1167,17 @@ public class IntentionActivity extends AppCompatActivity {
         IdHug = findViewById(R.id.IdHug);
         IdHideSeek = findViewById(R.id.IdHideSeek);
         IdMusic = findViewById(R.id.IdMusic);
+        IdOlvas = findViewById(R.id.IdOlvas);
+        IdSeta = findViewById(R.id.IdSeta);
+        IdAludni = findViewById(R.id.IdAludni);
+        IdBeszel = findViewById(R.id.IdBeszel);
+        IdHajfest = findViewById(R.id.IdHajfest);
+        IdFoci= findViewById(R.id.IdFoci);
+        IdFotoz = findViewById(R.id.IdFotoz);
+        IdHinta = findViewById(R.id.IdHinta);
+        IdVadasz = findViewById(R.id.IdVadasz);
+        IdFesul = findViewById(R.id.IdFesul);
+        IdKemping = findViewById(R.id.IdKemping);
         tableLayout1 = (TableLayout) findViewById(R.id.tableLayout1);
 
         sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
