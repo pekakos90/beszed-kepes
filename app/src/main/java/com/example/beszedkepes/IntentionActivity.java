@@ -111,7 +111,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -163,7 +163,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -215,7 +215,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -267,7 +267,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -319,7 +319,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -371,7 +371,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -423,7 +423,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -475,7 +475,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -527,7 +527,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -579,7 +579,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -631,7 +631,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -683,7 +683,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -735,7 +735,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -787,7 +787,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -839,7 +839,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -891,7 +891,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -943,7 +943,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -995,7 +995,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -1047,7 +1047,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
@@ -1099,7 +1099,7 @@ public class IntentionActivity extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
-                editor.commit();
+                editor.apply();
             }
         });
 
