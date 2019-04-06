@@ -55,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
                     finish();
                     SharedPreferences.Editor editor =sharedPreferences.edit();
                     editor.clear();
+                    editor.commit();
 
                 }
             }
