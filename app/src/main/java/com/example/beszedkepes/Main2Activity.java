@@ -254,7 +254,7 @@ public class Main2Activity extends AppCompatActivity {
     }
         private void init ()
         {
-            Family_oldal = (ImageView) findViewById(R.id.Family_oldal);
+            Family_oldal = findViewById(R.id.Family_oldal);
             button_kamera = findViewById(R.id.button_kamera);
             Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
             Image_View1 = findViewById(R.id.Image_View1);
@@ -273,7 +273,6 @@ public class Main2Activity extends AppCompatActivity {
 
             sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
         }
-
 
     public static String encodeToBase64(Bitmap image) {
         Bitmap immage = image;
