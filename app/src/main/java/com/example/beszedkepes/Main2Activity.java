@@ -255,21 +255,21 @@ public class Main2Activity extends AppCompatActivity {
         private void init ()
         {
             Family_oldal = (ImageView) findViewById(R.id.Family_oldal);
-            button_kamera = (ImageView) findViewById(R.id.button_kamera);
-            Harmadik_oldal = (ImageView) findViewById(R.id.Harmadik_oldal);
-            Image_View1 = (ImageView) findViewById(R.id.Image_View1);
-            Image_View2 = (ImageView) findViewById(R.id.Image_View2);
-            Image_View3 = (ImageView) findViewById(R.id.Image_View3);
-            Image_View4 = (ImageView) findViewById(R.id.Image_View4);
-            Image_10 = (ImageView) findViewById(R.id.Image_10);
-            Image_11 = (ImageView) findViewById(R.id.Image_11);
-            Image_12 = (ImageView) findViewById(R.id.Image_12);
-            Image_13 = (ImageView) findViewById(R.id.Image_13);
-            Image_20 = (ImageView) findViewById(R.id.Image_20);
-            Image_21 = (ImageView) findViewById(R.id.Image_21);
-            Image_22 = (ImageView) findViewById(R.id.Image_22);
-            Image_23 = (ImageView) findViewById(R.id.Image_23);
-            Image_View22 = (ImageView) findViewById(R.id.Image_View22);
+            button_kamera = findViewById(R.id.button_kamera);
+            Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
+            Image_View1 = findViewById(R.id.Image_View1);
+            Image_View2 = findViewById(R.id.Image_View2);
+            Image_View3 = findViewById(R.id.Image_View3);
+            Image_View4 = findViewById(R.id.Image_View4);
+            Image_10 = findViewById(R.id.Image_10);
+            Image_11 = findViewById(R.id.Image_11);
+            Image_12 = findViewById(R.id.Image_12);
+            Image_13 = findViewById(R.id.Image_13);
+            Image_20 = findViewById(R.id.Image_20);
+            Image_21 = findViewById(R.id.Image_21);
+            Image_22 = findViewById(R.id.Image_22);
+            Image_23 = findViewById(R.id.Image_23);
+            Image_View22 = findViewById(R.id.Image_View22);
 
             sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
         }
