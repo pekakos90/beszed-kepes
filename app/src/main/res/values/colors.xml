@@ -9,5 +9,7 @@
     <color name="AppTheme_Dark_Dialog">#361E1E</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#0F0C0C</color>
+    <color name="ligh_red">#ff6961</color>
+    <color name="transparent">#55000000</color>
 
 </resources>
