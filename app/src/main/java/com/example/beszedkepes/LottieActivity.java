@@ -18,7 +18,7 @@ public class LottieActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lottie);
 
         LottieAnimationView animationView = findViewById(R.id.av_from_code);
-        animationView.setAnimation("checked_done.json");
+        animationView.setAnimation("liquid-loading.json");
         animationView.playAnimation();
         animationView.loop(false);
 
@@ -27,7 +27,7 @@ public class LottieActivity extends AppCompatActivity {
             Intent intent = new Intent(LottieActivity.this, Main2Activity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
-        }, 1500);
+        }, 3500);
 
     }
 }
