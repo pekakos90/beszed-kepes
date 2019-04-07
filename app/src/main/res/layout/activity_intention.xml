@@ -311,7 +311,7 @@
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:src="@mipmap/cold"
+                android:src="@mipmap/sorethroat"
                 android:layout_toRightOf="@id/Harmadik_oldal"/>
 
             <ImageView

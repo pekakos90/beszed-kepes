@@ -18,8 +18,8 @@ import java.io.ByteArrayOutputStream;
 public class FamilyActivity extends AppCompatActivity {
 
     private ImageView Myself_oldal, button_kamera, Image_View11,
-            Image_View33, Image_View22, ImageEn, ImageGrandPa,ImageOlderbro,ImageOldersis,
-            ImageGrandma,ImageYoungerbro, ImageYoungersis,  Harmadik_oldal;
+            Image_View33, Image_View22, Image_View44, ImageEn, ImageGrandPa,ImageOlderbro,ImageOldersis,
+            ImageGrandma,ImageYoungerbro, ImageYoungersis, ImageAnya, Harmadik_oldal, negyedik_oldal;
 
     private SharedPreferences sharedPreferences;
 
@@ -42,6 +42,10 @@ public class FamilyActivity extends AppCompatActivity {
         String informacio_intention = sharedPreferences.getString("intention", "");
         Bitmap seged_bitmap_intention = decodeToBase64(informacio_intention);
         Image_View33.setImageBitmap(seged_bitmap_intention);
+
+        String informacio_problem = sharedPreferences.getString("problem", "");
+        Bitmap seged_bitmap_problem = decodeToBase64(informacio_problem);
+        Image_View44.setImageBitmap(seged_bitmap_problem);
 
         Myself_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +74,15 @@ public class FamilyActivity extends AppCompatActivity {
             }
         });
 
+        negyedik_oldal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent problem_activity= new Intent(FamilyActivity.this,ProblemsActivity.class);
+                startActivity(problem_activity);
+                finish();
+            }
+        });
+
         ImageEn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,6 +102,8 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageYoungerbro.setEnabled(true);
                     ImageYoungersis.setImageResource(R.mipmap.youngersister);
                     ImageYoungersis.setEnabled(true);
+                    ImageAnya.setImageResource(R.mipmap.anya);
+                    ImageAnya.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
@@ -115,6 +130,8 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageYoungerbro.setEnabled(true);
                     ImageYoungersis.setImageResource(R.mipmap.youngersister);
                     ImageYoungersis.setEnabled(true);
+                    ImageAnya.setImageResource(R.mipmap.anya);
+                    ImageAnya.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
@@ -141,6 +158,8 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageYoungerbro.setEnabled(true);
                     ImageYoungersis.setImageResource(R.mipmap.youngersister);
                     ImageYoungersis.setEnabled(true);
+                    ImageAnya.setImageResource(R.mipmap.anya);
+                    ImageAnya.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
@@ -167,6 +186,8 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageYoungerbro.setEnabled(true);
                     ImageYoungersis.setImageResource(R.mipmap.youngersister);
                     ImageYoungersis.setEnabled(true);
+                    ImageAnya.setImageResource(R.mipmap.anya);
+                    ImageAnya.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
@@ -193,6 +214,8 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageYoungerbro.setEnabled(true);
                     ImageYoungersis.setImageResource(R.mipmap.youngersister);
                     ImageYoungersis.setEnabled(true);
+                    ImageAnya.setImageResource(R.mipmap.anya);
+                    ImageAnya.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
@@ -219,6 +242,8 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageYoungerbro.setEnabled(false);
                     ImageYoungersis.setImageResource(R.mipmap.youngersister);
                     ImageYoungersis.setEnabled(true);
+                    ImageAnya.setImageResource(R.mipmap.anya);
+                    ImageAnya.setEnabled(true);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
@@ -245,6 +270,36 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageYoungerbro.setEnabled(true);
                     ImageYoungersis.setImageResource(R.mipmap.psbuttonx);
                     ImageYoungersis.setEnabled(false);
+                    ImageAnya.setImageResource(R.mipmap.anya);
+                    ImageAnya.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
+                editor.apply();
+            }
+        });
+
+        ImageAnya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View22.equals("")){
+                    Image_View22.setImageResource(R.mipmap.anya);
+                    ImageEn.setImageResource(R.mipmap.en);
+                    ImageEn.setEnabled(true);
+                    ImageGrandPa.setImageResource(R.mipmap.grandpa);
+                    ImageGrandPa.setEnabled(true);
+                    ImageGrandma.setImageResource(R.mipmap.grandma);
+                    ImageGrandma.setEnabled(true);
+                    ImageOlderbro.setImageResource(R.mipmap.olderbrother);
+                    ImageOlderbro.setEnabled(true);
+                    ImageOldersis.setImageResource(R.mipmap.oldersister);
+                    ImageOldersis.setEnabled(true);
+                    ImageYoungerbro.setImageResource(R.mipmap.youngerbrother);
+                    ImageYoungerbro.setEnabled(true);
+                    ImageYoungersis.setImageResource(R.mipmap.youngersister);
+                    ImageYoungersis.setEnabled(true);
+                    ImageAnya.setImageResource(R.mipmap.psbuttonx);
+                    ImageAnya.setEnabled(false);
                 }
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
@@ -269,6 +324,8 @@ public class FamilyActivity extends AppCompatActivity {
                 ImageYoungerbro.setEnabled(true);
                 ImageYoungersis.setImageResource(R.mipmap.youngersister);
                 ImageYoungersis.setEnabled(true);
+                ImageAnya.setImageResource(R.mipmap.anya);
+                ImageAnya.setEnabled(true);
                 Image_View22.setImageResource(0);
             }
         });
@@ -285,9 +342,12 @@ public class FamilyActivity extends AppCompatActivity {
         ImageYoungerbro = findViewById(R.id.ImageYoungerbro);
         ImageYoungersis = findViewById(R.id.ImageYoungersis);
         ImageEn = findViewById(R.id.ImageEn);
+        ImageAnya = findViewById(R.id.ImageAnya);
         Image_View22 = findViewById(R.id.Image_View22);
         Image_View33 = findViewById(R.id.Image_View33);
+        Image_View44 = findViewById(R.id.Image_View44);
         Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
+        negyedik_oldal = findViewById(R.id.negyedik_oldal);
 
         sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
     }

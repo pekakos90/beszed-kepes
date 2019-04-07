@@ -19,7 +19,7 @@ import java.io.ByteArrayOutputStream;
 
 public class IntentionActivity extends AppCompatActivity {
 
-    private ImageView Myself_oldal, Family_oldal, Image_View11, Image_View22, Image_View33,
+    private ImageView Myself_oldal, Family_oldal, negyedik_oldal,  Image_View11, Image_View22, Image_View33,
             Image_View44, IdGetup, IdBreakfast, IdDressing, IdHug, IdHideSeek, IdCleaning, IdDancing,
             IdDieta, IdMusic, IdOlvas, IdSeta, IdAludni, IdBeszel, IdHajfest, IdFoci, IdFotoz, IdHinta,
             IdVadasz, IdFesul, IdKemping;
@@ -45,6 +45,10 @@ public class IntentionActivity extends AppCompatActivity {
         Bitmap seged_bitmap_intention = decodeToBase64(informacio_intention);
         Image_View33.setImageBitmap(seged_bitmap_intention);
 
+        String informacio_problem = sharedPreferences.getString("problem", "");
+        Bitmap seged_bitmap_problem = decodeToBase64(informacio_problem);
+        Image_View44.setImageBitmap(seged_bitmap_problem);
+
         Myself_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,6 +63,16 @@ public class IntentionActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent family_activity = new Intent(IntentionActivity.this, FamilyActivity.class);
                 startActivity(family_activity);
+                finish();
+            }
+        });
+
+
+        negyedik_oldal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent problem_activity= new Intent(IntentionActivity.this,ProblemsActivity.class);
+                startActivity(problem_activity);
                 finish();
             }
         });
@@ -1154,9 +1168,11 @@ public class IntentionActivity extends AppCompatActivity {
 
     private void init() {
         Myself_oldal = (ImageView) findViewById(R.id.Myself_oldal);
+        negyedik_oldal = (ImageView) findViewById(R.id.negyedik_oldal);
         Image_View11 = findViewById(R.id.Image_View11);
         Image_View22 = findViewById(R.id.Image_View22);
         Image_View33 = findViewById(R.id.Image_View33);
+        Image_View44 = findViewById(R.id.Image_View44);
         Family_oldal = findViewById(R.id.Family_oldal);
         IdGetup = findViewById(R.id.IdGetup);
         IdBreakfast = findViewById(R.id.IdBreakfast);
