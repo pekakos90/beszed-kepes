@@ -955,7 +955,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
-                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                SharedPreferences.Editor editor=sharedPreferences.edit();
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
             }
@@ -1007,7 +1007,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
-                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                SharedPreferences.Editor editor=sharedPreferences.edit();
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
             }
@@ -1059,7 +1059,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
-                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                SharedPreferences.Editor editor=sharedPreferences.edit();
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
             }
@@ -1111,7 +1111,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.psbuttonx);
                     IdKemping.setEnabled(false);
                 }
-                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                SharedPreferences.Editor editor=sharedPreferences.edit();
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
             }

@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
                 loginLekeres();
                 if (belepes)
                 {
-                    Intent belepes = new Intent(LoginActivity.this, Main2Activity.class);
+                    Intent belepes = new Intent(LoginActivity.this, LottieActivity.class);
                     startActivity(belepes);
                     finish();
                     SharedPreferences.Editor editor =sharedPreferences.edit();
@@ -132,11 +132,4 @@ public class LoginActivity extends AppCompatActivity {
         sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
     }
 
-    /*Runnable runnable = new Runnable() {
-        @Override
-        public void run() {
-            rellay1.setVisibility(View.VISIBLE);
-            rellay2.setVisibility(View.VISIBLE);
-        }
-    };*/
 }
