@@ -11,14 +11,13 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class LottieActivity extends AppCompatActivity {
 
-    private Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lottie);
 
-        LottieAnimationView animationView = (LottieAnimationView) findViewById(R.id.av_from_code);
+        LottieAnimationView animationView = findViewById(R.id.av_from_code);
         animationView.setAnimation("checked_done.json");
         animationView.playAnimation();
         animationView.loop(false);
@@ -30,5 +29,5 @@ public class LottieActivity extends AppCompatActivity {
             startActivity(intent);
         }, 1500);
 
-    };
+    }
 }
