@@ -2,6 +2,7 @@ package com.example.beszedkepes;
 
 import android.content.Intent;
 import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,11 +23,12 @@ public class LottieActivity extends AppCompatActivity {
         animationView.playAnimation();
         animationView.loop(false);
 
+        Handler mHandler = new Handler(Looper.getMainLooper());
+        mHandler.postDelayed(() -> {
+            Intent intent = new Intent(LottieActivity.this, Main2Activity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        }, 1500);
 
-        Intent belepes = new Intent(LottieActivity.this, Main2Activity.class);
-        startActivity(belepes);
-        finish();
-
-
-    }
+    };
 }
