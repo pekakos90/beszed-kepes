@@ -133,8 +133,6 @@ public class Main2Activity extends AppCompatActivity {
                     Image_13.setEnabled(true);
                     Image_20.setImageResource(R.mipmap.uncertain);
                     Image_20.setEnabled(true);
-                    Image_21.setImageResource(R.mipmap.drinking);
-                    Image_21.setEnabled(true);
                 }
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
@@ -158,8 +156,6 @@ public class Main2Activity extends AppCompatActivity {
                     Image_13.setEnabled(true);
                     Image_20.setImageResource(R.mipmap.uncertain);
                     Image_20.setEnabled(true);
-                    Image_21.setImageResource(R.mipmap.drinking);
-                    Image_21.setEnabled(true);
                 }
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
@@ -184,8 +180,6 @@ public class Main2Activity extends AppCompatActivity {
                     Image_13.setEnabled(true);
                     Image_20.setImageResource(R.mipmap.uncertain);
                     Image_20.setEnabled(true);
-                    Image_21.setImageResource(R.mipmap.drinking);
-                    Image_21.setEnabled(true);
                 }
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
@@ -209,8 +203,6 @@ public class Main2Activity extends AppCompatActivity {
                     Image_13.setEnabled(false);
                     Image_20.setImageResource(R.mipmap.uncertain);
                     Image_20.setEnabled(true);
-                    Image_21.setImageResource(R.mipmap.drinking);
-                    Image_21.setEnabled(true);
                 }
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
@@ -234,8 +226,6 @@ public class Main2Activity extends AppCompatActivity {
                     Image_13.setEnabled(true);
                     Image_20.setImageResource(R.mipmap.psbuttonx);
                     Image_20.setEnabled(false);
-                    Image_21.setImageResource(R.mipmap.drinking);
-                    Image_21.setEnabled(true);
                 }
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
@@ -244,30 +234,6 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
-        Image_21.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(!Image_View1.equals("")){
-                    Image_View1.setImageResource(R.mipmap.drinking);
-                    Image_10.setImageResource(R.mipmap.girl);
-                    Image_10.setEnabled(true);
-                    Image_11.setImageResource(R.mipmap.sad);
-                    Image_11.setEnabled(true);
-                    Image_12.setImageResource(R.mipmap.suprised);
-                    Image_12.setEnabled(true);
-                    Image_13.setImageResource(R.mipmap.sick);
-                    Image_13.setEnabled(true);
-                    Image_20.setImageResource(R.mipmap.uncertain);
-                    Image_20.setEnabled(true);
-                    Image_21.setImageResource(R.mipmap.psbuttonx);
-                    Image_21.setEnabled(false);
-                }
-                //Itt hozzuk létre a sharedpreference-t//
-                SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
-                editor.putString("myself", encodeToBase64(((BitmapDrawable) Image_View1.getDrawable()).getBitmap()));
-                editor.apply();
-            }
-        });
 
         Image_View1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -282,8 +248,6 @@ public class Main2Activity extends AppCompatActivity {
                 Image_13.setEnabled(true);
                 Image_20.setImageResource(R.mipmap.uncertain);
                 Image_20.setEnabled(true);
-                Image_21.setImageResource(R.mipmap.drinking);
-                Image_21.setEnabled(true);
                 Image_View1.setImageResource(0);
             }
         });

@@ -242,8 +242,8 @@
                         android:layout_width="15dp"
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
-                        android:src="@mipmap/vadaszat"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:src="@mipmap/drinking" />
 
                     <ImageView
                         android:id="@+id/IdFesul"

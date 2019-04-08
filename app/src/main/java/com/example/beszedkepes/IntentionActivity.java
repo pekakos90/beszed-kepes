@@ -142,7 +142,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -194,7 +194,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -246,7 +246,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -298,7 +298,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -350,7 +350,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -402,7 +402,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -454,7 +454,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -506,7 +506,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -558,7 +558,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -610,7 +610,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -662,7 +662,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -714,7 +714,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -766,7 +766,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -818,7 +818,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -870,7 +870,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -922,7 +922,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(false);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -974,7 +974,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.psbuttonx);
                     IdHinta.setEnabled(false);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -991,7 +991,7 @@ public class IntentionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!Image_View33.equals("")){
-                    Image_View33.setImageResource(R.mipmap.vadaszat);
+                    Image_View33.setImageResource(R.mipmap.drinking);
                     IdHug.setImageResource(R.mipmap.hugging);
                     IdHug.setEnabled(true);
                     IdDressing.setImageResource(R.mipmap.dressingup);
@@ -1078,7 +1078,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.psbuttonx);
                     IdFesul.setEnabled(false);
@@ -1130,7 +1130,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdFotoz.setEnabled(true);
                     IdHinta.setImageResource(R.mipmap.hinta);
                     IdHinta.setEnabled(true);
-                    IdVadasz.setImageResource(R.mipmap.vadaszat);
+                    IdVadasz.setImageResource(R.mipmap.drinking);
                     IdVadasz.setEnabled(true);
                     IdFesul.setImageResource(R.mipmap.fesul);
                     IdFesul.setEnabled(true);
@@ -1180,7 +1180,7 @@ public class IntentionActivity extends AppCompatActivity {
                 IdFotoz.setEnabled(true);
                 IdHinta.setImageResource(R.mipmap.hinta);
                 IdHinta.setEnabled(true);
-                IdVadasz.setImageResource(R.mipmap.vadaszat);
+                IdVadasz.setImageResource(R.mipmap.drinking);
                 IdVadasz.setEnabled(true);
                 IdFesul.setImageResource(R.mipmap.fesul);
                 IdFesul.setEnabled(true);
