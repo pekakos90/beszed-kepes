@@ -58,27 +58,54 @@ public class Main2Activity extends AppCompatActivity {
         Family_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent family_activity = new Intent(Main2Activity.this, FamilyActivity.class);
-                startActivity(family_activity);
-                finish();
+                if (Image_View1.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent family_activity = new Intent(Main2Activity.this, FamilyActivity.class);
+                    startActivity(family_activity);
+                    finish();
+                } else {
+                    Intent family_activity = new Intent(Main2Activity.this, FamilyActivity.class);
+                    startActivity(family_activity);
+                    finish();
+                }
             }
         });
 
         Harmadik_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intention_activity = new Intent(Main2Activity.this, IntentionActivity.class);
-                startActivity(intention_activity);
-                finish();
+                if (Image_View1.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent intention_activity = new Intent(Main2Activity.this, IntentionActivity.class);
+                    startActivity(intention_activity);
+                    finish();
+                } else {
+                    Intent intention_activity = new Intent(Main2Activity.this, IntentionActivity.class);
+                    startActivity(intention_activity);
+                    finish();
+                }
             }
         });
 
         negyedik_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent problem_activity= new Intent(Main2Activity.this,ProblemsActivity.class);
-                startActivity(problem_activity);
-                finish();
+                if (Image_View1.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent problem_activity= new Intent(Main2Activity.this,ProblemsActivity.class);
+                    startActivity(problem_activity);
+                    finish();
+                } else {
+                    Intent problem_activity= new Intent(Main2Activity.this,ProblemsActivity.class);
+                    startActivity(problem_activity);
+                    finish();
+                }
             }
         });
 
@@ -264,28 +291,28 @@ public class Main2Activity extends AppCompatActivity {
 
 
     }
-        private void init ()
-        {
-            Family_oldal = findViewById(R.id.Family_oldal);
-            button_kamera = findViewById(R.id.button_kamera);
-            Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
-            negyedik_oldal = findViewById(R.id.negyedik_oldal);
-            Image_View1 = findViewById(R.id.Image_View1);
-            Image_View2 = findViewById(R.id.Image_View2);
-            Image_View3 = findViewById(R.id.Image_View3);
-            Image_View4 = findViewById(R.id.Image_View4);
-            Image_10 = findViewById(R.id.Image_10);
-            Image_11 = findViewById(R.id.Image_11);
-            Image_12 = findViewById(R.id.Image_12);
-            Image_13 = findViewById(R.id.Image_13);
-            Image_20 = findViewById(R.id.Image_20);
-            Image_21 = findViewById(R.id.Image_21);
-            Image_22 = findViewById(R.id.Image_22);
-            Image_23 = findViewById(R.id.Image_23);
-            Image_View22 = findViewById(R.id.Image_View22);
+    private void init ()
+    {
+        Family_oldal = findViewById(R.id.Family_oldal);
+        button_kamera = findViewById(R.id.button_kamera);
+        Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
+        negyedik_oldal = findViewById(R.id.negyedik_oldal);
+        Image_View1 = findViewById(R.id.Image_View1);
+        Image_View2 = findViewById(R.id.Image_View2);
+        Image_View3 = findViewById(R.id.Image_View3);
+        Image_View4 = findViewById(R.id.Image_View4);
+        Image_10 = findViewById(R.id.Image_10);
+        Image_11 = findViewById(R.id.Image_11);
+        Image_12 = findViewById(R.id.Image_12);
+        Image_13 = findViewById(R.id.Image_13);
+        Image_20 = findViewById(R.id.Image_20);
+        Image_21 = findViewById(R.id.Image_21);
+        Image_22 = findViewById(R.id.Image_22);
+        Image_23 = findViewById(R.id.Image_23);
+        Image_View22 = findViewById(R.id.Image_View22);
 
-            sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-        }
+        sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
+    }
 
     public static String encodeToBase64(Bitmap image) {
         Bitmap immage = image;

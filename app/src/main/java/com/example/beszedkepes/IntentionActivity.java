@@ -52,18 +52,36 @@ public class IntentionActivity extends AppCompatActivity {
         Myself_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myself_activity= new Intent(IntentionActivity.this,Main2Activity.class);
-                startActivity(myself_activity);
-                finish();
+                if (Image_View33.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent myself_activity= new Intent(IntentionActivity.this,Main2Activity.class);
+                    startActivity(myself_activity);
+                    finish();
+                } else {
+                    Intent myself_activity= new Intent(IntentionActivity.this,Main2Activity.class);
+                    startActivity(myself_activity);
+                    finish();
+                }
             }
         });
 
         Family_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent family_activity = new Intent(IntentionActivity.this, FamilyActivity.class);
-                startActivity(family_activity);
-                finish();
+                if (Image_View33.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent family_activity = new Intent(IntentionActivity.this, FamilyActivity.class);
+                    startActivity(family_activity);
+                    finish();
+                } else {
+                    Intent family_activity = new Intent(IntentionActivity.this, FamilyActivity.class);
+                    startActivity(family_activity);
+                    finish();
+                }
             }
         });
 
@@ -71,9 +89,18 @@ public class IntentionActivity extends AppCompatActivity {
         negyedik_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent problem_activity= new Intent(IntentionActivity.this,ProblemsActivity.class);
-                startActivity(problem_activity);
-                finish();
+                if (Image_View33.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent problem_activity= new Intent(IntentionActivity.this,ProblemsActivity.class);
+                    startActivity(problem_activity);
+                    finish();
+                } else {
+                    Intent problem_activity= new Intent(IntentionActivity.this,ProblemsActivity.class);
+                    startActivity(problem_activity);
+                    finish();
+                }
             }
         });
 

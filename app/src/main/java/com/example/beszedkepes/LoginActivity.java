@@ -101,8 +101,6 @@ public class LoginActivity extends AppCompatActivity {
                 if (kulsofelhasznalonev.equals(belsofhnev) && kulsojelszo.equals(belsojelszo))
                 {
                     belepes = true;
-                    /*lottieAnimation1.setAnimation("checked_done.json");
-                    lottieAnimation1.playAnimation();*/
                     final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this);
                     progressDialog.setIndeterminate(true);
                     progressDialog.setMessage("Belépés...");

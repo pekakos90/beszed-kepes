@@ -50,36 +50,72 @@ public class FamilyActivity extends AppCompatActivity {
         Myself_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myself_activity= new Intent(FamilyActivity.this,Main2Activity.class);
-                startActivity(myself_activity);
-                finish();
+                if (Image_View22.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent myself_activity= new Intent(FamilyActivity.this,Main2Activity.class);
+                    startActivity(myself_activity);
+                    finish();
+                } else {
+                    Intent myself_activity= new Intent(FamilyActivity.this,Main2Activity.class);
+                    startActivity(myself_activity);
+                    finish();
+                }
             }
         });
 
         button_kamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent kamera_activity= new Intent(FamilyActivity.this,CameraAcitvity.class);
-                startActivity(kamera_activity);
-                finish();
+                if (Image_View22.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent kamera_activity= new Intent(FamilyActivity.this,CameraAcitvity.class);
+                    startActivity(kamera_activity);
+                    finish();
+                } else {
+                    Intent kamera_activity= new Intent(FamilyActivity.this,CameraAcitvity.class);
+                    startActivity(kamera_activity);
+                    finish();
+                }
             }
         });
 
         Harmadik_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent szandek_activity= new Intent(FamilyActivity.this,IntentionActivity.class);
-                startActivity(szandek_activity);
-                finish();
+                if (Image_View22.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent szandek_activity= new Intent(FamilyActivity.this,IntentionActivity.class);
+                    startActivity(szandek_activity);
+                    finish();
+                } else {
+                    Intent szandek_activity= new Intent(FamilyActivity.this,IntentionActivity.class);
+                    startActivity(szandek_activity);
+                    finish();
+                }
             }
         });
 
         negyedik_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent problem_activity= new Intent(FamilyActivity.this,ProblemsActivity.class);
-                startActivity(problem_activity);
-                finish();
+                if (Image_View22.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent problem_activity= new Intent(FamilyActivity.this,ProblemsActivity.class);
+                    startActivity(problem_activity);
+                    finish();
+                } else {
+                    Intent problem_activity= new Intent(FamilyActivity.this,ProblemsActivity.class);
+                    startActivity(problem_activity);
+                    finish();
+                }
             }
         });
 

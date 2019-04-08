@@ -42,35 +42,55 @@ public class ProblemsActivity extends AppCompatActivity {
         Bitmap seged_bitmap_intention = decodeToBase64(informacio_intention);
         Image_View33.setImageBitmap(seged_bitmap_intention);
 
-        final String informacio_problem = sharedPreferences.getString("problem", "");
+        String informacio_problem = sharedPreferences.getString("problem", "");
         Bitmap seged_bitmap_problem = decodeToBase64(informacio_problem);
         Image_View44.setImageBitmap(seged_bitmap_problem);
 
         Myself_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myself_activity= new Intent(ProblemsActivity.this,Main2Activity.class);
-                startActivity(myself_activity);
-                finish();
+                if (Image_View44.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent myself_activity= new Intent(ProblemsActivity.this,Main2Activity.class);
+                    startActivity(myself_activity);
+                    finish();
+                } else {
+                    Intent myself_activity= new Intent(ProblemsActivity.this,Main2Activity.class);
+                    startActivity(myself_activity);
+                    finish();
+                }
+
             }
         });
 
         Family_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent family_activity= new Intent(ProblemsActivity.this,FamilyActivity.class);
-                startActivity(family_activity);
-                finish();
+                if (Image_View44.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.clear();
+                    editor.apply();
+                    Intent family_activity= new Intent(ProblemsActivity.this,FamilyActivity.class);
+                    startActivity(family_activity);
+                    finish();
+                } else {
+                    Intent family_activity= new Intent(ProblemsActivity.this,FamilyActivity.class);
+                    startActivity(family_activity);
+                    finish();
+                }
+
             }
         });
 
         Harmadik_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (informacio_problem.isEmpty()){
+                if (Image_View44.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
                     editor.clear();
-                    editor.commit();
+                    editor.apply();
                     Intent szandek_activity= new Intent(ProblemsActivity.this,IntentionActivity.class);
                     startActivity(szandek_activity);
                     finish();

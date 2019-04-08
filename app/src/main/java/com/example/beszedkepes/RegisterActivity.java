@@ -95,10 +95,10 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
-   /* private boolean registerAge(){
-        String PasswordInput = signup_input_layout_age.getEditText().getText().toString().trim();
+   /*private boolean registerAge(){
+        String szuldatum = signup_input_layout_age.getEditText().getText().toString().trim();
 
-        if(PasswordInput.isEmpty()){
+        if(szuldatum.isEmpty()){
             signup_input_layout_age.setError("Mező nem lehet üres!");
             return false;
         }else {
@@ -109,13 +109,13 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void init() {
         signup_input_layout_age = (TextInputLayout) findViewById(R.id.signup_input_layout_age);
-        signup_input_layout_name = (TextInputLayout) findViewById(R.id.signup_input_layout_name);
-        signup_input_layout_username = (TextInputLayout) findViewById(R.id.signup_input_layout_username);
-        signup_input_layout_password = (TextInputLayout) findViewById(R.id.signup_input_layout_password);
-        btn_signup = (Button)findViewById(R.id.btn_signup);
-        edit_name = (EditText) findViewById(R.id.edit_name);
-        edit_username = (EditText) findViewById(R.id.edit_username);
-        edit_passw = (EditText) findViewById(R.id.edit_passw);
+        signup_input_layout_name = findViewById(R.id.signup_input_layout_name);
+        signup_input_layout_username = findViewById(R.id.signup_input_layout_username);
+        signup_input_layout_password = findViewById(R.id.signup_input_layout_password);
+        btn_signup = findViewById(R.id.btn_signup);
+        edit_name = findViewById(R.id.edit_name);
+        edit_username = findViewById(R.id.edit_username);
+        edit_passw = findViewById(R.id.edit_passw);
     }
 
     public void signup() {
