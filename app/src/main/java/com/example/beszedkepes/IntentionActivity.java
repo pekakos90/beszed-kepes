@@ -23,7 +23,6 @@ public class IntentionActivity extends AppCompatActivity {
             Image_View44, IdGetup, IdBreakfast, IdDressing, IdHug, IdHideSeek, IdCleaning, IdDancing,
             IdDieta, IdMusic, IdOlvas, IdSeta, IdAludni, IdBeszel, IdHajfest, IdFoci, IdFotoz, IdHinta,
             IdVadasz, IdFesul, IdKemping;
-    private TableLayout tableLayout1;
     private SharedPreferences sharedPreferences;
 
     @Override
@@ -123,7 +122,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(false);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -175,7 +174,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(false);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -227,7 +226,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(false);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -279,7 +278,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(false);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -331,7 +330,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(false);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -383,7 +382,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(false);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(false);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -435,7 +434,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.psbuttonx);
                     IdHideSeek.setEnabled(false);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -472,7 +471,7 @@ public class IntentionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!Image_View33.equals("")){
-                    Image_View33.setImageResource(R.mipmap.cleaning);
+                    Image_View33.setImageResource(R.mipmap.takarit);
                     IdHug.setImageResource(R.mipmap.hugging);
                     IdHug.setEnabled(true);
                     IdDressing.setImageResource(R.mipmap.dressingup);
@@ -539,7 +538,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.psbuttonx);
                     IdGetup.setEnabled(false);
@@ -591,7 +590,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -643,7 +642,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -695,7 +694,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -747,7 +746,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -799,7 +798,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -851,7 +850,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -903,7 +902,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -955,7 +954,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -1007,7 +1006,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -1059,7 +1058,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -1111,7 +1110,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdDieta.setEnabled(true);
                     IdHideSeek.setImageResource(R.mipmap.amagatall);
                     IdHideSeek.setEnabled(true);
-                    IdCleaning.setImageResource(R.mipmap.cleaning);
+                    IdCleaning.setImageResource(R.mipmap.takarit);
                     IdCleaning.setEnabled(true);
                     IdGetup.setImageResource(R.mipmap.getup);
                     IdGetup.setEnabled(true);
@@ -1161,7 +1160,7 @@ public class IntentionActivity extends AppCompatActivity {
                 IdDieta.setEnabled(true);
                 IdHideSeek.setImageResource(R.mipmap.amagatall);
                 IdHideSeek.setEnabled(true);
-                IdCleaning.setImageResource(R.mipmap.cleaning);
+                IdCleaning.setImageResource(R.mipmap.takarit);
                 IdCleaning.setEnabled(true);
                 IdGetup.setImageResource(R.mipmap.getup);
                 IdGetup.setEnabled(true);
@@ -1221,7 +1220,6 @@ public class IntentionActivity extends AppCompatActivity {
         IdVadasz = findViewById(R.id.IdVadasz);
         IdFesul = findViewById(R.id.IdFesul);
         IdKemping = findViewById(R.id.IdKemping);
-        tableLayout1 = (TableLayout) findViewById(R.id.tableLayout1);
 
         sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
     }

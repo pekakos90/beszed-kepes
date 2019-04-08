@@ -139,7 +139,7 @@
                         android:layout_height="100dp"
                         android:layout_weight="0.25"
                         android:padding="10dp"
-                        android:src="@mipmap/cleaning"
+                        android:src="@mipmap/takarit"
                         android:id="@+id/IdCleaning"/>
 
                 </TableRow>

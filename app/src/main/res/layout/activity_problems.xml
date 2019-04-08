@@ -75,7 +75,7 @@
                     android:layout_height="100dp"
                     android:layout_weight="0.25"
                     android:padding="10dp"
-                    android:src="@mipmap/nyatha"
+                    android:src="@mipmap/nyathas"
                     android:id="@+id/IdNatha" />
 
 

@@ -106,7 +106,7 @@ public class ProblemsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
-                    Image_View44.setImageResource(R.mipmap.nyatha);
+                    Image_View44.setImageResource(R.mipmap.nyathas);
                     IdNatha.setImageResource(R.mipmap.psbuttonx);
                     IdNatha.setEnabled(false);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
@@ -147,7 +147,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.sorethroat);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.psbuttonx);
                     IdTorokfaj.setEnabled(false);
@@ -187,7 +187,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.cold);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -227,7 +227,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.nyakfajas);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -267,7 +267,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.backpain);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -307,7 +307,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.seb);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -347,7 +347,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.tothache);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -387,7 +387,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.vernyomas);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -427,7 +427,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.alergia);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -462,12 +462,53 @@ public class ProblemsActivity extends AppCompatActivity {
             }
         });
 
+
+        IdGipsz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!Image_View44.equals("")){
+                    Image_View44.setImageResource(R.mipmap.begipszel);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
+                    IdNatha.setEnabled(true);
+                    IdTorokfaj.setImageResource(R.mipmap.sorethroat);
+                    IdTorokfaj.setEnabled(true);
+                    IdMegfaz.setImageResource(R.mipmap.cold);
+                    IdMegfaz.setEnabled(true);
+                    IdNyakfaj.setImageResource(R.mipmap.nyakfajas);
+                    IdNyakfaj.setEnabled(true);
+                    IdHatfaj.setImageResource(R.mipmap.backpain);
+                    IdHatfaj.setEnabled(true);
+                    IdSeb.setImageResource(R.mipmap.seb);
+                    IdSeb.setEnabled(true);
+                    IdFogfajas.setImageResource(R.mipmap.tothache);
+                    IdFogfajas.setEnabled(true);
+                    IdVernyom.setImageResource(R.mipmap.vernyomas);
+                    IdVernyom.setEnabled(true);
+                    IdAlergia.setImageResource(R.mipmap.alergia);
+                    IdAlergia.setEnabled(true);
+                    IdGipsz.setImageResource(R.mipmap.psbuttonx);
+                    IdGipsz.setEnabled(false);
+                    IdAjult.setImageResource(R.mipmap.ajult);
+                    IdAjult.setEnabled(true);
+                    IdFertotlenit.setImageResource(R.mipmap.fertotlenit);
+                    IdFertotlenit.setEnabled(true);
+                    IdEllenoriz.setImageResource(R.mipmap.ellenorizni);
+                    IdEllenoriz.setEnabled(true);
+                    IdBeteg.setImageResource(R.mipmap.sick);
+                    IdBeteg.setEnabled(true);
+                }
+                SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
+                editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
+                editor.apply();
+            }
+        });
+
         IdAjult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.ajult);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -507,7 +548,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.fertotlenit);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -547,7 +588,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.ellenorizni);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -587,7 +628,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!Image_View44.equals("")){
                     Image_View44.setImageResource(R.mipmap.sick);
-                    IdNatha.setImageResource(R.mipmap.nyatha);
+                    IdNatha.setImageResource(R.mipmap.nyathas);
                     IdNatha.setEnabled(true);
                     IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                     IdTorokfaj.setEnabled(true);
@@ -625,7 +666,7 @@ public class ProblemsActivity extends AppCompatActivity {
         Image_View44.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                IdNatha.setImageResource(R.mipmap.nyatha);
+                IdNatha.setImageResource(R.mipmap.nyathas);
                 IdNatha.setEnabled(true);
                 IdTorokfaj.setImageResource(R.mipmap.sorethroat);
                 IdTorokfaj.setEnabled(true);
