@@ -277,7 +277,7 @@
                 android:layout_width="81dp"
                 android:layout_height="91dp"
                 android:layout_margin="10dp"
-                android:src="@mipmap/drinking"
+                android:src="@mipmap/felette"
                 android:layout_toRightOf="@id/negyedik_oldal"/>
 
 

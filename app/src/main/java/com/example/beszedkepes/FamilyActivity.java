@@ -19,7 +19,7 @@ public class FamilyActivity extends AppCompatActivity {
 
     private ImageView Myself_oldal, button_kamera, Image_View11,
             Image_View33, Image_View22, Image_View44, ImageEn, ImageGrandPa,ImageOlderbro,ImageOldersis,
-            ImageGrandma,ImageYoungerbro, ImageYoungersis, ImageAnya, Harmadik_oldal, negyedik_oldal;
+            ImageGrandma,ImageYoungerbro, ImageYoungersis, ImageAnya, Harmadik_oldal, negyedik_oldal, otodik_oldal;
 
     private SharedPreferences sharedPreferences;
 
@@ -47,12 +47,16 @@ public class FamilyActivity extends AppCompatActivity {
         Bitmap seged_bitmap_problem = decodeToBase64(informacio_problem);
         Image_View44.setImageBitmap(seged_bitmap_problem);
 
+        String informacio_relations = sharedPreferences.getString("relation", "");
+        Bitmap seged_bitmap_relations = decodeToBase64(informacio_relations);
+        Image_View44.setImageBitmap(seged_bitmap_relations);
+
         Myself_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (Image_View22.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
-                    editor.clear();
+                    editor.remove("family");
                     editor.apply();
                     Intent myself_activity= new Intent(FamilyActivity.this,Main2Activity.class);
                     startActivity(myself_activity);
@@ -70,7 +74,7 @@ public class FamilyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Image_View22.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
-                    editor.clear();
+                    editor.remove("family");
                     editor.apply();
                     Intent kamera_activity= new Intent(FamilyActivity.this,CameraAcitvity.class);
                     startActivity(kamera_activity);
@@ -88,7 +92,7 @@ public class FamilyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Image_View22.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
-                    editor.clear();
+                    editor.remove("family");
                     editor.apply();
                     Intent szandek_activity= new Intent(FamilyActivity.this,IntentionActivity.class);
                     startActivity(szandek_activity);
@@ -106,7 +110,7 @@ public class FamilyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Image_View22.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
-                    editor.clear();
+                    editor.remove("family");
                     editor.apply();
                     Intent problem_activity= new Intent(FamilyActivity.this,ProblemsActivity.class);
                     startActivity(problem_activity);
@@ -114,6 +118,24 @@ public class FamilyActivity extends AppCompatActivity {
                 } else {
                     Intent problem_activity= new Intent(FamilyActivity.this,ProblemsActivity.class);
                     startActivity(problem_activity);
+                    finish();
+                }
+            }
+        });
+
+        otodik_oldal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Image_View22.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.remove("family");
+                    editor.apply();
+                    Intent relation_activity= new Intent(FamilyActivity.this, RelationsActivity.class);
+                    startActivity(relation_activity);
+                    finish();
+                } else {
+                    Intent relation_activity= new Intent(FamilyActivity.this,RelationsActivity.class);
+                    startActivity(relation_activity);
                     finish();
                 }
             }
@@ -384,6 +406,7 @@ public class FamilyActivity extends AppCompatActivity {
         Image_View44 = findViewById(R.id.Image_View44);
         Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
         negyedik_oldal = findViewById(R.id.negyedik_oldal);
+        otodik_oldal = findViewById(R.id.otodik_oldal);
 
         sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
     }

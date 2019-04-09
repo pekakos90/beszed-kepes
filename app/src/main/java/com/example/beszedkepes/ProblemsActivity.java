@@ -19,7 +19,7 @@ public class ProblemsActivity extends AppCompatActivity {
 
     private ImageView IdNatha,IdTorokfaj, IdMegfaz, IdNyakfaj, IdHatfaj, IdSeb, IdFogfajas, IdVernyom,
             IdAlergia, IdGipsz, IdAjult, IdFertotlenit, IdEllenoriz, IdBeteg, Image_View11, Image_View22,
-            Image_View33, Image_View44, Myself_oldal, Family_oldal, Harmadik_oldal;
+            Image_View33, Image_View44, Myself_oldal, Family_oldal, Harmadik_oldal, otodik_oldal;
 
     private SharedPreferences sharedPreferences;
 
@@ -46,12 +46,16 @@ public class ProblemsActivity extends AppCompatActivity {
         Bitmap seged_bitmap_problem = decodeToBase64(informacio_problem);
         Image_View44.setImageBitmap(seged_bitmap_problem);
 
+        String informacio_relations = sharedPreferences.getString("relation", "");
+        Bitmap seged_bitmap_relations = decodeToBase64(informacio_relations);
+        Image_View44.setImageBitmap(seged_bitmap_relations);
+
         Myself_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (Image_View44.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
-                    editor.clear();
+                    editor.remove("problem");
                     editor.apply();
                     Intent myself_activity= new Intent(ProblemsActivity.this,Main2Activity.class);
                     startActivity(myself_activity);
@@ -70,7 +74,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Image_View44.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
-                    editor.clear();
+                    editor.remove("problem");
                     editor.apply();
                     Intent family_activity= new Intent(ProblemsActivity.this,FamilyActivity.class);
                     startActivity(family_activity);
@@ -89,7 +93,7 @@ public class ProblemsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Image_View44.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
-                    editor.clear();
+                    editor.remove("problem");
                     editor.apply();
                     Intent szandek_activity= new Intent(ProblemsActivity.this,IntentionActivity.class);
                     startActivity(szandek_activity);
@@ -97,6 +101,24 @@ public class ProblemsActivity extends AppCompatActivity {
                 } else {
                     Intent szandek_activity= new Intent(ProblemsActivity.this,IntentionActivity.class);
                     startActivity(szandek_activity);
+                    finish();
+                }
+            }
+        });
+
+        otodik_oldal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Image_View44.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.remove("problem");
+                    editor.apply();
+                    Intent relation_activity= new Intent(ProblemsActivity.this, RelationsActivity.class);
+                    startActivity(relation_activity);
+                    finish();
+                } else {
+                    Intent relation_activity= new Intent(ProblemsActivity.this,RelationsActivity.class);
+                    startActivity(relation_activity);
                     finish();
                 }
             }
@@ -719,6 +741,7 @@ public class ProblemsActivity extends AppCompatActivity {
         Image_View33 = findViewById(R.id.Image_View33);
         Image_View44 = findViewById(R.id.Image_View44);
         Myself_oldal = findViewById(R.id.Myself_oldal);
+        otodik_oldal = findViewById(R.id.otodik_oldal);
         Family_oldal = findViewById(R.id.Family_oldal);
         Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
 

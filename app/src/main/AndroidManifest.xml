@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".LottieActivity"></activity>
+        <activity android:name=".RelationsActivity"></activity>
+        <activity android:name=".LottieActivity" />
         <activity android:name=".ProblemsActivity" />
         <activity android:name=".IntentionActivity" />
         <activity android:name=".FamilyActivity" />

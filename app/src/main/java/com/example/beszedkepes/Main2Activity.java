@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.Toast;
 
@@ -27,7 +28,7 @@ public class Main2Activity extends AppCompatActivity {
     private ImageView Family_oldal, button_kamera, Image_View1, Image_View22,
             Image_10, Image_View2, Image_View3, Image_View4,
             Image_11, Image_12, Image_13, Image_20, Image_21, Image_22, Image_23, Image_30,
-            Image_31, Image_32, Image_33, Harmadik_oldal, negyedik_oldal;
+            Image_31, Image_32, Image_33, Harmadik_oldal, negyedik_oldal, otodik_oldal;
 
     private SharedPreferences sharedPreferences;
 
@@ -55,12 +56,16 @@ public class Main2Activity extends AppCompatActivity {
         Bitmap seged_bitmap_problem = decodeToBase64(informacio_problem);
         Image_View4.setImageBitmap(seged_bitmap_problem);
 
+        String informacio_relations = sharedPreferences.getString("relation", "");
+        Bitmap seged_bitmap_relations = decodeToBase64(informacio_relations);
+        Image_View4.setImageBitmap(seged_bitmap_relations);
+
         Family_oldal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (Image_View1.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
-                    editor.clear();
+                    editor.remove("myself");
                     editor.apply();
                     Intent family_activity = new Intent(Main2Activity.this, FamilyActivity.class);
                     startActivity(family_activity);
@@ -78,7 +83,7 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Image_View1.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
-                    editor.clear();
+                    editor.remove("myself");
                     editor.apply();
                     Intent intention_activity = new Intent(Main2Activity.this, IntentionActivity.class);
                     startActivity(intention_activity);
@@ -96,7 +101,7 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Image_View1.getDrawable()==null){
                     SharedPreferences.Editor editor =sharedPreferences.edit();
-                    editor.clear();
+                    editor.remove("myself");
                     editor.apply();
                     Intent problem_activity= new Intent(Main2Activity.this,ProblemsActivity.class);
                     startActivity(problem_activity);
@@ -104,6 +109,24 @@ public class Main2Activity extends AppCompatActivity {
                 } else {
                     Intent problem_activity= new Intent(Main2Activity.this,ProblemsActivity.class);
                     startActivity(problem_activity);
+                    finish();
+                }
+            }
+        });
+
+        otodik_oldal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Image_View1.getDrawable()==null){
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.remove("myself");
+                    editor.apply();
+                    Intent relation_activity= new Intent(Main2Activity.this, RelationsActivity.class);
+                    startActivity(relation_activity);
+                    finish();
+                } else {
+                    Intent relation_activity= new Intent(Main2Activity.this,RelationsActivity.class);
+                    startActivity(relation_activity);
                     finish();
                 }
             }
@@ -261,6 +284,7 @@ public class Main2Activity extends AppCompatActivity {
         button_kamera = findViewById(R.id.button_kamera);
         Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
         negyedik_oldal = findViewById(R.id.negyedik_oldal);
+        otodik_oldal = findViewById(R.id.otodik_oldal);
         Image_View1 = findViewById(R.id.Image_View1);
         Image_View2 = findViewById(R.id.Image_View2);
         Image_View3 = findViewById(R.id.Image_View3);

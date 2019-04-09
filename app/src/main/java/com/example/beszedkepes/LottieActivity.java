@@ -9,6 +9,8 @@ import android.view.View;
 
 import com.airbnb.lottie.LottieAnimationView;
 
+import java.util.Date;
+
 public class LottieActivity extends AppCompatActivity {
 
 
