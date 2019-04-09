@@ -31,6 +31,8 @@ public class FamilyActivity extends AppCompatActivity {
 
         init();
 
+        setKivalasztottKep();
+
         String informacio = sharedPreferences.getString("myself","");                                         //Lekérjük a name adatott amibe beletettünk egy stringet a Mentes_Activity-nél és beletesszük egy stringbe
         Bitmap seged_bitmap = decodeToBase64(informacio);
         Image_View11.setImageBitmap(seged_bitmap);
@@ -163,6 +165,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageAnya.setImageResource(R.mipmap.anya);
                     ImageAnya.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(1);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.apply();
@@ -191,6 +194,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageAnya.setImageResource(R.mipmap.anya);
                     ImageAnya.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(2);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.apply();
@@ -219,6 +223,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageAnya.setImageResource(R.mipmap.anya);
                     ImageAnya.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(3);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.apply();
@@ -247,6 +252,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageAnya.setImageResource(R.mipmap.anya);
                     ImageAnya.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(4);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.apply();
@@ -275,6 +281,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageAnya.setImageResource(R.mipmap.anya);
                     ImageAnya.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(5);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.apply();
@@ -303,6 +310,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageAnya.setImageResource(R.mipmap.anya);
                     ImageAnya.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(6);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.apply();
@@ -331,6 +339,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageAnya.setImageResource(R.mipmap.anya);
                     ImageAnya.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(7);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.apply();
@@ -359,6 +368,7 @@ public class FamilyActivity extends AppCompatActivity {
                     ImageAnya.setImageResource(R.mipmap.psbuttonx);
                     ImageAnya.setEnabled(false);
                 }
+                editSharedPreferencesKivalasztottKep(8);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("family", encodeToBase64(((BitmapDrawable)Image_View22.getDrawable()).getBitmap()));
                 editor.apply();
@@ -384,6 +394,7 @@ public class FamilyActivity extends AppCompatActivity {
                 ImageYoungersis.setEnabled(true);
                 ImageAnya.setImageResource(R.mipmap.anya);
                 ImageAnya.setEnabled(true);
+                editSharedPreferencesKivalasztottKep(0);
                 Image_View22.setImageResource(0);
             }
         });
@@ -425,5 +436,46 @@ public class FamilyActivity extends AppCompatActivity {
 
         Log.d("Image Log:", imageEncoded);
         return imageEncoded;
+    }
+
+    private void editSharedPreferencesKivalasztottKep(int i) {
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("Csalad", i);
+        editor.apply();
+
+    }
+
+    // A korábban kiválasztott kép helyére X-et rak be
+    private void setKivalasztottKep() {
+
+        int kivalasztottSzam = sharedPreferences.getInt("Csalad", 0);
+
+        switch (kivalasztottSzam) {
+            case 1:
+                ImageEn.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 2:
+                ImageGrandPa.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 3:
+                ImageGrandma.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 4:
+                ImageOlderbro.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 5:
+                ImageOldersis.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 6:
+                ImageYoungerbro.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 7:
+                ImageYoungersis.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 8:
+                ImageAnya.setImageResource(R.mipmap.psbuttonx);
+                break;
+        }
     }
 }

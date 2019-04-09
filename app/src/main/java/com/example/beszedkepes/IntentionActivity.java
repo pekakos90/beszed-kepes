@@ -32,6 +32,8 @@ public class IntentionActivity extends AppCompatActivity {
 
         init();
 
+        setKivalasztottKep();
+
         String informacio = sharedPreferences.getString("myself","");                                         //Lekérjük a name adatott amibe beletettünk egy stringet a Mentes_Activity-nél és beletesszük egy stringbe
         Bitmap seged_bitmap = decodeToBase64(informacio);
         Image_View11.setImageBitmap(seged_bitmap);
@@ -171,6 +173,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(1);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -223,6 +226,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(2);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -275,6 +279,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(3);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -327,6 +332,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(4);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -379,6 +385,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(5);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -431,6 +438,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(6);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -483,6 +491,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(7);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -535,6 +544,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(8);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -587,6 +597,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(9);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -639,6 +650,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(10);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -691,6 +703,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(11);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -743,6 +756,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(12);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -795,6 +809,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(13);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -847,6 +862,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(14);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -899,6 +915,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(15);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -951,6 +968,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(16);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -1003,6 +1021,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(17);
                 SharedPreferences.Editor editor=sharedPreferences.edit();
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -1055,6 +1074,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(18);
                 SharedPreferences.Editor editor=sharedPreferences.edit();
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -1107,6 +1127,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.kemping);
                     IdKemping.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(19);
                 SharedPreferences.Editor editor=sharedPreferences.edit();
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -1159,6 +1180,7 @@ public class IntentionActivity extends AppCompatActivity {
                     IdKemping.setImageResource(R.mipmap.psbuttonx);
                     IdKemping.setEnabled(false);
                 }
+                editSharedPreferencesKivalasztottKep(20);
                 SharedPreferences.Editor editor=sharedPreferences.edit();
                 editor.putString("intention", encodeToBase64(((BitmapDrawable)Image_View33.getDrawable()).getBitmap()));
                 editor.apply();
@@ -1208,6 +1230,7 @@ public class IntentionActivity extends AppCompatActivity {
                 IdFesul.setEnabled(true);
                 IdKemping.setImageResource(R.mipmap.kemping);
                 IdKemping.setEnabled(true);
+                editSharedPreferencesKivalasztottKep(0);
                 Image_View33.setImageResource(0);
             }
         });
@@ -1261,5 +1284,82 @@ public class IntentionActivity extends AppCompatActivity {
 
         Log.d("Image Log:", imageEncoded);
         return imageEncoded;
+    }
+
+    private void editSharedPreferencesKivalasztottKep(int i) {
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("Tevekenyseg", i);
+        editor.apply();
+
+    }
+
+    // A korábban kiválasztott kép helyére X-et rak be
+    private void setKivalasztottKep() {
+
+        int kivalasztottSzam = sharedPreferences.getInt("Tevekenyseg", 0);
+
+        switch (kivalasztottSzam) {
+            case 1:
+                IdHug.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 2:
+                IdDressing.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 3:
+                IdBreakfast.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 4:
+                IdMusic.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 5:
+                IdDancing.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 6:
+                IdDieta.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 7:
+                IdHideSeek.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 8:
+                IdCleaning.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 9:
+                IdGetup.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 10:
+                IdOlvas.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 11:
+                IdSeta.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 12:
+                IdAludni.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 13:
+                IdBeszel.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 14:
+                IdHajfest.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 15:
+                IdFoci.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 16:
+                IdFotoz.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 17:
+                IdHinta.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 18:
+                IdVadasz.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 19:
+                IdFesul.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 20:
+                IdKemping.setImageResource(R.mipmap.psbuttonx);
+                break;
+        }
     }
 }
