@@ -30,6 +30,8 @@ public class ProblemsActivity extends AppCompatActivity {
 
         init();
 
+        setKivalasztottKep();
+
         String informacio = sharedPreferences.getString("myself","");                                         //Lekérjük a name adatott amibe beletettünk egy stringet a Mentes_Activity-nél és beletesszük egy stringbe
         Bitmap seged_bitmap = decodeToBase64(informacio);
         Image_View11.setImageBitmap(seged_bitmap);
@@ -158,6 +160,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(1);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -198,6 +201,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(2);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -238,6 +242,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(3);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -278,6 +283,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(4);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -318,6 +324,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(5);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -358,6 +365,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(6);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -398,6 +406,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(7);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -438,6 +447,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(8);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -478,6 +488,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(9);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -519,6 +530,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(10);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -559,6 +571,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(11);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -599,6 +612,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(12);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -639,6 +653,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.sick);
                     IdBeteg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(13);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -679,6 +694,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     IdBeteg.setImageResource(R.mipmap.psbuttonx);
                     IdBeteg.setEnabled(false);
                 }
+                editSharedPreferencesKivalasztottKep(14);
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("problem", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
                 editor.apply();
@@ -716,6 +732,7 @@ public class ProblemsActivity extends AppCompatActivity {
                 IdEllenoriz.setEnabled(true);
                 IdBeteg.setImageResource(R.mipmap.sick);
                 IdBeteg.setEnabled(true);
+                editSharedPreferencesKivalasztottKep(0);
                 Image_View44.setImageResource(0);
             }
         });
@@ -762,5 +779,64 @@ public class ProblemsActivity extends AppCompatActivity {
     public static Bitmap decodeToBase64(String input) {
         byte[] decodedByte = Base64.decode(input, 0);
         return BitmapFactory.decodeByteArray(decodedByte, 0, decodedByte.length);
+    }
+
+    private void editSharedPreferencesKivalasztottKep(int i) {
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("Probléma", i);
+        editor.apply();
+
+    }
+
+    // A korábban kiválasztott kép helyére X-et rak be
+    private void setKivalasztottKep() {
+
+        int kivalasztottSzam = sharedPreferences.getInt("Probléma", 0);
+
+        switch (kivalasztottSzam) {
+            case 1:
+                IdNatha.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 2:
+                IdTorokfaj.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 3:
+                IdMegfaz.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 4:
+                IdNyakfaj.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 5:
+                IdHatfaj.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 6:
+                IdSeb.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 7:
+                IdFogfajas.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 8:
+                IdVernyom.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 9:
+                IdAlergia.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 10:
+                IdGipsz.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 11:
+                IdAjult.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 12:
+                IdFertotlenit.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 13:
+                IdEllenoriz.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 14:
+                IdBeteg.setImageResource(R.mipmap.psbuttonx);
+                break;
+        }
     }
 }

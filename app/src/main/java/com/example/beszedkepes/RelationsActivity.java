@@ -30,6 +30,8 @@ public class RelationsActivity extends AppCompatActivity {
 
         init();
 
+        setKivalasztottKep();
+
         String informacio = sharedPreferences.getString("myself","");                                         //Lekérjük a name adatott amibe beletettünk egy stringet a Mentes_Activity-nél és beletesszük egy stringbe
         Bitmap seged_bitmap = decodeToBase64(informacio);
         Image_View11.setImageBitmap(seged_bitmap);
@@ -189,6 +191,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(1);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -232,6 +235,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(2);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -275,6 +279,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(3);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -318,6 +323,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(4);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -361,6 +367,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(5);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -404,6 +411,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(6);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -447,6 +455,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(7);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -490,6 +499,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(8);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -533,6 +543,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(9);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -575,7 +586,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdMeleg.setEnabled(true);
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
-                }
+                }editSharedPreferencesKivalasztottKep(10);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -619,6 +630,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(11);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -662,6 +674,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(12);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -705,6 +718,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(13);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -748,6 +762,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.hideg);
                     IdHideg.setEnabled(true);
                 }
+                editSharedPreferencesKivalasztottKep(14);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -791,6 +806,7 @@ public class RelationsActivity extends AppCompatActivity {
                     IdHideg.setImageResource(R.mipmap.psbuttonx);
                     IdHideg.setEnabled(false);
                 }
+                editSharedPreferencesKivalasztottKep(15);
                 //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor=sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("relation", encodeToBase64(((BitmapDrawable)Image_View44.getDrawable()).getBitmap()));
@@ -831,6 +847,7 @@ public class RelationsActivity extends AppCompatActivity {
                 IdMeleg.setEnabled(true);
                 IdHideg.setImageResource(R.mipmap.hideg);
                 IdHideg.setEnabled(true);
+                editSharedPreferencesKivalasztottKep(0);
                 Image_View44.setImageResource(0);
             }
         });
@@ -880,5 +897,67 @@ public class RelationsActivity extends AppCompatActivity {
     public static Bitmap decodeToBase64(String input) {
         byte[] decodedByte = Base64.decode(input, 0);
         return BitmapFactory.decodeByteArray(decodedByte, 0, decodedByte.length);
+    }
+
+    private void editSharedPreferencesKivalasztottKep(int i) {
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("Kapcsolatok", i);
+        editor.apply();
+
+    }
+
+    // A korábban kiválasztott kép helyére X-et rak be
+    private void setKivalasztottKep() {
+
+        int kivalasztottSzam = sharedPreferences.getInt("Kapcsolatok", 0);
+
+        switch (kivalasztottSzam) {
+            case 1:
+                IdEgy.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 2:
+                IdSok.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 3:
+                IdStop.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 4:
+                IdHarom.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 5:
+                IdOt.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 6:
+                IdAlso.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 7:
+                IdKozepso.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 8:
+                IdFelso.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 9:
+                IdAlatt.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 10:
+                IdFelett.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 11:
+                IdIgen.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 12:
+                IdNagy.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 13:
+                IdKicsi.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 14:
+                IdMeleg.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 15:
+                IdHideg.setImageResource(R.mipmap.psbuttonx);
+                break;
+        }
     }
 }
