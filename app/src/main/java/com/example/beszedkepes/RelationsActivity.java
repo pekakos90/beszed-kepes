@@ -12,6 +12,7 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 
@@ -20,7 +21,7 @@ public class RelationsActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     private ImageView Image_View11, Image_View22, Image_View33, Image_View44, IdEgy, IdSok, IdStop, IdHarom, IdOt,
                         IdAlso, IdKozepso, IdFelso, IdAlatt, IdFelett, IdIgen, IdNagy, IdKicsi, IdMeleg, IdHideg,
-                        Myself_oldal, Family_oldal, negyedik_oldal, Harmadik_oldal;
+                        Myself_oldal, Family_oldal, negyedik_oldal, Harmadik_oldal, button_kamera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -140,6 +141,15 @@ public class RelationsActivity extends AppCompatActivity {
                     finish();
                 }
 
+            }
+        });
+
+        button_kamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent kamera_activity = new Intent(RelationsActivity.this, CameraAcitvity.class);
+                startActivity(kamera_activity);
+                finish();
             }
         });
 
@@ -824,6 +834,7 @@ public class RelationsActivity extends AppCompatActivity {
                 Image_View44.setImageResource(0);
             }
         });
+
     }
 
     private void init() {
@@ -850,6 +861,7 @@ public class RelationsActivity extends AppCompatActivity {
         Family_oldal = findViewById(R.id.Family_oldal);
         negyedik_oldal = findViewById(R.id.negyedik_oldal);
         Harmadik_oldal = findViewById(R.id.Harmadik_oldal);
+        button_kamera = findViewById(R.id.button_kamera);
 
         sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
     }

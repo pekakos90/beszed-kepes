@@ -12,7 +12,7 @@ import android.widget.ImageView;
 public class CameraAcitvity extends AppCompatActivity {
 
 
-    private ImageView Button_Kamera, Image_View, Myself_oldal, Family_oldal;
+    private ImageView Button_Kamera, Image_View, Myself_oldal, Family_oldal,negyedik_oldal,otodik_oldal,Harmadik_oldal;
     private int CAMERA_REQUEST_CODE = 123;
 
     @Override
@@ -47,6 +47,33 @@ public class CameraAcitvity extends AppCompatActivity {
                 finish();
             }
         });
+
+        Harmadik_oldal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intention_activity= new Intent(CameraAcitvity.this,IntentionActivity.class);
+                startActivity(intention_activity);
+                finish();
+            }
+        });
+
+        negyedik_oldal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent problem_activity= new Intent(CameraAcitvity.this,ProblemsActivity.class);
+                startActivity(problem_activity);
+                finish();
+            }
+        });
+
+        otodik_oldal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent relation_activity= new Intent(CameraAcitvity.this,RelationsActivity.class);
+                startActivity(relation_activity);
+                finish();
+            }
+        });
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
@@ -63,5 +90,8 @@ public class CameraAcitvity extends AppCompatActivity {
         Image_View = (ImageView) findViewById(R.id.Image_View);
         Myself_oldal = (ImageView) findViewById(R.id.Myself_oldal);
         Family_oldal = (ImageView) findViewById(R.id.Family_oldal);
+        Harmadik_oldal = (ImageView) findViewById(R.id.Harmadik_oldal);
+        otodik_oldal = (ImageView) findViewById(R.id.otodik_oldal);
+        negyedik_oldal = (ImageView) findViewById(R.id.negyedik_oldal);
     }
 }

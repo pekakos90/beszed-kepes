@@ -31,14 +31,17 @@ public class Main2Activity extends AppCompatActivity {
             Image_31, Image_32, Image_33, Harmadik_oldal, negyedik_oldal, otodik_oldal;
 
     private SharedPreferences sharedPreferences;
+    private SharedPreferences sharedPreferencesKivalasztottKep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        init();
+        /*sharedPreferencesKivalasztottKep = getSharedPreferences("kivalasztottKep", Context.MODE_PRIVATE);
+        setKivalasztottKep();*/
 
+        init();
 
         String informacio = sharedPreferences.getString("myself","");
         Bitmap seged_bitmap = decodeToBase64(informacio);
@@ -144,6 +147,7 @@ public class Main2Activity extends AppCompatActivity {
         Image_10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //editSharedPreferencesMyself(1);
                 if(!Image_View1.equals("")){
                     Image_View1.setImageResource(R.mipmap.girl);
                     Image_10.setImageResource(R.mipmap.psbuttonx);
@@ -167,6 +171,7 @@ public class Main2Activity extends AppCompatActivity {
         Image_11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //editSharedPreferencesMyself(2);
                 if(!Image_View1.equals("")){
                     Image_View1.setImageResource(R.mipmap.sad);
                     Image_10.setImageResource(R.mipmap.girl);
@@ -191,6 +196,7 @@ public class Main2Activity extends AppCompatActivity {
         Image_12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //editSharedPreferencesMyself(3);
                 if(!Image_View1.equals("")){
                     Image_View1.setImageResource(R.mipmap.suprised);
                     Image_10.setImageResource(R.mipmap.girl);
@@ -214,6 +220,7 @@ public class Main2Activity extends AppCompatActivity {
         Image_13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //editSharedPreferencesMyself(4);
                 if(!Image_View1.equals("")){
                     Image_View1.setImageResource(R.mipmap.sick);
                     Image_10.setImageResource(R.mipmap.girl);
@@ -227,7 +234,6 @@ public class Main2Activity extends AppCompatActivity {
                     Image_20.setImageResource(R.mipmap.uncertain);
                     Image_20.setEnabled(true);
                 }
-                //Itt hozzuk létre a sharedpreference-t//
                 SharedPreferences.Editor editor = sharedPreferences.edit();           //Editor azért kell, hogy tudjunk szerkeszteni a file-ban (képeket beletenni)
                 editor.putString("myself", encodeToBase64(((BitmapDrawable) Image_View1.getDrawable()).getBitmap()));
                 editor.apply();
@@ -238,6 +244,7 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!Image_View1.equals("")){
+                    //editSharedPreferencesMyself(5);
                     Image_View1.setImageResource(R.mipmap.uncertain);
                     Image_10.setImageResource(R.mipmap.girl);
                     Image_10.setEnabled(true);
@@ -317,4 +324,38 @@ public class Main2Activity extends AppCompatActivity {
         byte[] decodedByte = Base64.decode(input, 0);
         return BitmapFactory.decodeByteArray(decodedByte, 0, decodedByte.length);
     }
+
+    /* private void editSharedPreferencesMyself(int i) {
+
+        SharedPreferences.Editor editor = sharedPreferencesKivalasztottKep.edit();
+        editor.putInt("Ember", i);
+        editor.apply();
+
+    }
+
+    // A korábban kiválasztott kép helyére X-et rak be
+   private void setKivalasztottKep() {
+
+        int kivalasztottSzam = sharedPreferencesKivalasztottKep.getInt("Ember", 0);
+
+        switch (kivalasztottSzam) {
+            case 1:
+                Image_10.setImageResource(R.mipmap.psbuttonx); // Itt te tudod, hogy kell beállítani
+                break;
+            case 2:
+                Image_11.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 3:
+                Image_12.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 4:
+                Image_13.setImageResource(R.mipmap.psbuttonx);
+                break;
+            case 5:
+                Image_20.setImageResource(R.mipmap.psbuttonx);
+                break;
+            default:
+                break;
+        }
+    }*/
 }
