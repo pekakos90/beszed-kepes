@@ -15,4 +15,6 @@
     <string name="csalad">Család</string>
     <string name="tevekenyseg">Tevékenység</string>
     <string name="etel">Étel-Ital</string>
+    <string name="keszito">A programot készítette: Pék Ákos Bence</string>
+    <string name="keszito1">Szakdolgozat és program neve: Beszéd-Képes</string>
 </resources>

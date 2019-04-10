@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final int REQUEST_SIGNUP = 0;
     private Button btn_login;
-    private TextView TV_link_signup;
+    private TextView TV_link_signup, hiddenView;
     private TextInputLayout login_input_layout_username, login_input_layout_password;
     private DatabaseHelper db;
     private Handler handler = new Handler();
@@ -43,6 +43,17 @@ public class LoginActivity extends AppCompatActivity {
         /*handler.postDelayed(runnable, 2000);*/
 
         init();
+
+        hiddenView = (TextView) findViewById(R.id.hiddenView);
+        hiddenView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //when play is clicked show stop button and hide play button
+                Intent hidden = new Intent(LoginActivity.this, HiddenActivity.class);
+                startActivity(hidden);
+                finish();
+            }
+        });
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,9 +133,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private void init() {
         btn_login = (Button) findViewById(R.id.btn_login);
-        TV_link_signup = (TextView) findViewById(R.id.TV_link_signup);
-        login_input_layout_password = (TextInputLayout) findViewById(R.id.login_input_layout_password);
-        login_input_layout_username = (TextInputLayout) findViewById(R.id.login_input_layout_username);
+        hiddenView = findViewById(R.id.hiddenView);
+        TV_link_signup = findViewById(R.id.TV_link_signup);
+        login_input_layout_password = findViewById(R.id.login_input_layout_password);
+        login_input_layout_username = findViewById(R.id.login_input_layout_username);
         db = new DatabaseHelper(LoginActivity.this);
 
         sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);

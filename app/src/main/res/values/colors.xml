@@ -11,5 +11,6 @@
     <color name="black">#0F0C0C</color>
     <color name="ligh_red">#ff6961</color>
     <color name="transparent">#55000000</color>
+    <color name="proba">#ff9d9e9d</color>
 
 </resources>
