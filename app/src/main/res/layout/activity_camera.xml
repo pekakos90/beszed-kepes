@@ -10,18 +10,19 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:id="@+id/Image_View"
         android:gravity="center"
         android:background="#ccc" />
 
     <ImageView
         android:id="@+id/Button_Kamera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:src="@mipmap/camera"
-        android:text="Kamera Indítása" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/camera" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
